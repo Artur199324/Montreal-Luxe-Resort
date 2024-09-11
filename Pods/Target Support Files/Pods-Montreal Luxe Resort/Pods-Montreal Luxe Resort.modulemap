@@ -1,0 +1,6 @@
+framework module Pods_Montreal_Luxe_Resort {
+  umbrella header "Pods-Montreal Luxe Resort-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		037918496131D50E4999FEEE5C14655F /* Pods-Montreal Luxe ResortTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9F5CF20CEB9D84921600BF3CE42DB7 /* Pods-Montreal Luxe ResortTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19395002BA7DED7FBE8EE924A220A2FF /* Pods-Montreal Luxe Resort-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8B1A810B3DECDC910A3DB6D8F72A68 /* Pods-Montreal Luxe Resort-dummy.m */; };
+		3AED62951DB680D63DDF07A952FDBC5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		89CFE480E280E26F51D0EC06E4370042 /* Pods-Montreal Luxe ResortTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 041443D5B27FCB6D12EF01BB35520677 /* Pods-Montreal Luxe ResortTests-dummy.m */; };
+		BA4D0F56506317F2E697922DA8E2351B /* Pods-Montreal Luxe Resort-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 161169C08FE243BE6C020D0681118F15 /* Pods-Montreal Luxe Resort-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C74F3F906D7737105C85D15BDD6990C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CEE50D8F72132899CB51DC9AA9C7ED2E /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B3FFC15DBD988FE0D61BDD6FED845B7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB5D0F60F675E055CD457A851A68A3D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		F393787351F1C250BDFED11F7A46B0D4 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B660145A4E24A73C337E2B470FA6FB /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4126B4AE1CE8B6306534FCD4277686A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CEB00F5FC4448D176C013938EDB48FB;
+			remoteInfo = "Pods-Montreal Luxe Resort";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041443D5B27FCB6D12EF01BB35520677 /* Pods-Montreal Luxe ResortTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Montreal Luxe ResortTests-dummy.m"; sourceTree = "<group>"; };
+		079D90FD350D7AB809ED35837378323C /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0BA0161E8288479CF6B58848800002BD /* Pods-Montreal Luxe ResortTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Montreal Luxe ResortTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		161169C08FE243BE6C020D0681118F15 /* Pods-Montreal Luxe Resort-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Montreal Luxe Resort-umbrella.h"; sourceTree = "<group>"; };
+		20481B2E90F8AE543AE5079A3B747C66 /* Pods-Montreal Luxe Resort.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Montreal Luxe Resort.modulemap"; sourceTree = "<group>"; };
+		22ABD7FBFBD983FF33DA0A1D4FC43BEE /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-Info.plist"; sourceTree = "<group>"; };
+		23DCF87B783424CB93690989C978CEF7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		264A9231D8B24CEF38B0F397825C48A0 /* Pods-Montreal Luxe ResortTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Montreal Luxe ResortTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A9F5CF20CEB9D84921600BF3CE42DB7 /* Pods-Montreal Luxe ResortTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Montreal Luxe ResortTests-umbrella.h"; sourceTree = "<group>"; };
+		2AE05BDAD6EDCECD2FA5A47FBCFC11B3 /* Pods-Montreal Luxe ResortTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Montreal Luxe ResortTests.modulemap"; sourceTree = "<group>"; };
+		35A699F1244D16D5D5C4B02E9FAFC192 /* Pods-Montreal Luxe ResortTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Montreal Luxe ResortTests"; path = Pods_Montreal_Luxe_ResortTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CD283CC2389830515C1EB80A888F7C2 /* Pods-Montreal Luxe ResortTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Montreal Luxe ResortTests-Info.plist"; sourceTree = "<group>"; };
+		51F2D167964D042CF02FECADBAC365D3 /* Pods-Montreal Luxe Resort-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Montreal Luxe Resort-acknowledgements.plist"; sourceTree = "<group>"; };
+		526BCAAE0F57EF26143E6CBA13978108 /* Pods-Montreal Luxe Resort.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Montreal Luxe Resort.release.xcconfig"; sourceTree = "<group>"; };
+		53B660145A4E24A73C337E2B470FA6FB /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-dummy.m"; sourceTree = "<group>"; };
+		5A5DA9461556F0B471B11384AFC970DE /* Pods-Montreal Luxe Resort-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Montreal Luxe Resort-Info.plist"; sourceTree = "<group>"; };
+		5B3FFC15DBD988FE0D61BDD6FED845B7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-umbrella.h"; sourceTree = "<group>"; };
+		5CC40927C85467A6B632C58C19F2D38D /* Pods-Montreal Luxe Resort.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Montreal Luxe Resort.debug.xcconfig"; sourceTree = "<group>"; };
+		658F8AE16A44833A85D32E4080C8C473 /* Pods-Montreal Luxe ResortTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Montreal Luxe ResortTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		68007D8E8AFBCE525E742ADED30BF7A7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests"; path = Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB60F714863628ECFF7300CF8F09E4D /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A61C00BA409588FF3E7B7EABB9378F9D /* Pods-Montreal Luxe Resort-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Montreal Luxe Resort-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C29A6523D84EBD603F9AA4EC9FC6F587 /* Pods-Montreal Luxe ResortTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Montreal Luxe ResortTests.release.xcconfig"; sourceTree = "<group>"; };
+		C3A0A7E46BB9CA24F7F4C36E5E85E96E /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C7D62DDA7FE32D117918B57488B22D9B /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA8B1A810B3DECDC910A3DB6D8F72A68 /* Pods-Montreal Luxe Resort-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Montreal Luxe Resort-dummy.m"; sourceTree = "<group>"; };
+		E6983948F8FD353D408DB8E4F56D07D3 /* Pods-Montreal Luxe Resort */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Montreal Luxe Resort"; path = Pods_Montreal_Luxe_Resort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		131F03398C63080D821EF1279A2A409F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AED62951DB680D63DDF07A952FDBC5B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5292F7233DC34B45671B19AEEA0DEE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5D0F60F675E055CD457A851A68A3D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE712DF97B27BFFE6AF73B5A6A2EDB50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C74F3F906D7737105C85D15BDD6990C7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B08317AE053DA3C1574ED8569D34A28 /* Pods-Montreal Luxe ResortTests */ = {
+			isa = PBXGroup;
+			children = (
+				2AE05BDAD6EDCECD2FA5A47FBCFC11B3 /* Pods-Montreal Luxe ResortTests.modulemap */,
+				658F8AE16A44833A85D32E4080C8C473 /* Pods-Montreal Luxe ResortTests-acknowledgements.markdown */,
+				0BA0161E8288479CF6B58848800002BD /* Pods-Montreal Luxe ResortTests-acknowledgements.plist */,
+				041443D5B27FCB6D12EF01BB35520677 /* Pods-Montreal Luxe ResortTests-dummy.m */,
+				3CD283CC2389830515C1EB80A888F7C2 /* Pods-Montreal Luxe ResortTests-Info.plist */,
+				2A9F5CF20CEB9D84921600BF3CE42DB7 /* Pods-Montreal Luxe ResortTests-umbrella.h */,
+				264A9231D8B24CEF38B0F397825C48A0 /* Pods-Montreal Luxe ResortTests.debug.xcconfig */,
+				C29A6523D84EBD603F9AA4EC9FC6F587 /* Pods-Montreal Luxe ResortTests.release.xcconfig */,
+			);
+			name = "Pods-Montreal Luxe ResortTests";
+			path = "Target Support Files/Pods-Montreal Luxe ResortTests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7D1E04B12A0F6A2F062F05D61A3710B2 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6EB60F714863628ECFF7300CF8F09E4D /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.modulemap */,
+				C7D62DDA7FE32D117918B57488B22D9B /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-acknowledgements.markdown */,
+				C3A0A7E46BB9CA24F7F4C36E5E85E96E /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-acknowledgements.plist */,
+				53B660145A4E24A73C337E2B470FA6FB /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-dummy.m */,
+				22ABD7FBFBD983FF33DA0A1D4FC43BEE /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-Info.plist */,
+				5B3FFC15DBD988FE0D61BDD6FED845B7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-umbrella.h */,
+				23DCF87B783424CB93690989C978CEF7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig */,
+				079D90FD350D7AB809ED35837378323C /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig */,
+			);
+			name = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests";
+			path = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests";
+			sourceTree = "<group>";
+		};
+		80823C1B8D4FF5E7D53B6436DDAE6145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6983948F8FD353D408DB8E4F56D07D3 /* Pods-Montreal Luxe Resort */,
+				68007D8E8AFBCE525E742ADED30BF7A7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests */,
+				35A699F1244D16D5D5C4B02E9FAFC192 /* Pods-Montreal Luxe ResortTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C431414BDD30582335E4B824DBD53F1 /* Pods-Montreal Luxe Resort */ = {
+			isa = PBXGroup;
+			children = (
+				20481B2E90F8AE543AE5079A3B747C66 /* Pods-Montreal Luxe Resort.modulemap */,
+				A61C00BA409588FF3E7B7EABB9378F9D /* Pods-Montreal Luxe Resort-acknowledgements.markdown */,
+				51F2D167964D042CF02FECADBAC365D3 /* Pods-Montreal Luxe Resort-acknowledgements.plist */,
+				DA8B1A810B3DECDC910A3DB6D8F72A68 /* Pods-Montreal Luxe Resort-dummy.m */,
+				5A5DA9461556F0B471B11384AFC970DE /* Pods-Montreal Luxe Resort-Info.plist */,
+				161169C08FE243BE6C020D0681118F15 /* Pods-Montreal Luxe Resort-umbrella.h */,
+				5CC40927C85467A6B632C58C19F2D38D /* Pods-Montreal Luxe Resort.debug.xcconfig */,
+				526BCAAE0F57EF26143E6CBA13978108 /* Pods-Montreal Luxe Resort.release.xcconfig */,
+			);
+			name = "Pods-Montreal Luxe Resort";
+			path = "Target Support Files/Pods-Montreal Luxe Resort";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				80823C1B8D4FF5E7D53B6436DDAE6145 /* Products */,
+				D66F1F842C6739D2DF1A39E95A7E61E9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D66F1F842C6739D2DF1A39E95A7E61E9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C431414BDD30582335E4B824DBD53F1 /* Pods-Montreal Luxe Resort */,
+				7D1E04B12A0F6A2F062F05D61A3710B2 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests */,
+				3B08317AE053DA3C1574ED8569D34A28 /* Pods-Montreal Luxe ResortTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		92A8B707548AB55C6AC5B87B057D084B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				037918496131D50E4999FEEE5C14655F /* Pods-Montreal Luxe ResortTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4D9A7042D724398D396518F24F151F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4D0F56506317F2E697922DA8E2351B /* Pods-Montreal Luxe Resort-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E48F54AF793AC4F166394D15FA60E2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE50D8F72132899CB51DC9AA9C7ED2E /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		169276818293F855A25F398D41CE6185 /* Pods-Montreal Luxe ResortTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6482D3AAA83CB074B8C7809402B29D0 /* Build configuration list for PBXNativeTarget "Pods-Montreal Luxe ResortTests" */;
+			buildPhases = (
+				92A8B707548AB55C6AC5B87B057D084B /* Headers */,
+				7CB03FD5CB8158E7B472CA327CA31BA1 /* Sources */,
+				BE712DF97B27BFFE6AF73B5A6A2EDB50 /* Frameworks */,
+				73B9533CA80DC89111C8C15167DEB167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FFD6595FEC79BE621511934E0C7D627 /* PBXTargetDependency */,
+			);
+			name = "Pods-Montreal Luxe ResortTests";
+			productName = Pods_Montreal_Luxe_ResortTests;
+			productReference = 35A699F1244D16D5D5C4B02E9FAFC192 /* Pods-Montreal Luxe ResortTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		4AEACF46DB4E40A62E72E46CD558DCD4 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF87A512AB2CEB705E3CAAA928FDAEDF /* Build configuration list for PBXNativeTarget "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests" */;
+			buildPhases = (
+				D2E48F54AF793AC4F166394D15FA60E2 /* Headers */,
+				A702AEFE1BEC2EBC8B2C8776F338B92C /* Sources */,
+				B5292F7233DC34B45671B19AEEA0DEE9 /* Frameworks */,
+				00B032599384B89183217F75176B6E02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests";
+			productName = Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests;
+			productReference = 68007D8E8AFBCE525E742ADED30BF7A7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		4CEB00F5FC4448D176C013938EDB48FB /* Pods-Montreal Luxe Resort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CA7284323FF9A9AF552E4018024C4B7 /* Build configuration list for PBXNativeTarget "Pods-Montreal Luxe Resort" */;
+			buildPhases = (
+				C4D9A7042D724398D396518F24F151F2 /* Headers */,
+				D600EEC4D3FEC69C9E8960F4C224E862 /* Sources */,
+				131F03398C63080D821EF1279A2A409F /* Frameworks */,
+				FA67D57B3C326DB38D924E10ABF0926B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Montreal Luxe Resort";
+			productName = Pods_Montreal_Luxe_Resort;
+			productReference = E6983948F8FD353D408DB8E4F56D07D3 /* Pods-Montreal Luxe Resort */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			productRefGroup = 80823C1B8D4FF5E7D53B6436DDAE6145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CEB00F5FC4448D176C013938EDB48FB /* Pods-Montreal Luxe Resort */,
+				4AEACF46DB4E40A62E72E46CD558DCD4 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests */,
+				169276818293F855A25F398D41CE6185 /* Pods-Montreal Luxe ResortTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00B032599384B89183217F75176B6E02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73B9533CA80DC89111C8C15167DEB167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA67D57B3C326DB38D924E10ABF0926B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CB03FD5CB8158E7B472CA327CA31BA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CFE480E280E26F51D0EC06E4370042 /* Pods-Montreal Luxe ResortTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A702AEFE1BEC2EBC8B2C8776F338B92C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F393787351F1C250BDFED11F7A46B0D4 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D600EEC4D3FEC69C9E8960F4C224E862 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19395002BA7DED7FBE8EE924A220A2FF /* Pods-Montreal Luxe Resort-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FFD6595FEC79BE621511934E0C7D627 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Montreal Luxe Resort";
+			target = 4CEB00F5FC4448D176C013938EDB48FB /* Pods-Montreal Luxe Resort */;
+			targetProxy = F4126B4AE1CE8B6306534FCD4277686A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A33C6F8772F16E91619AAC5809879AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DCF87B783424CB93690989C978CEF7 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8B0C7551680C84FA42D38CAB94DF339B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079D90FD350D7AB809ED35837378323C /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A6449830F6E75B57575D4E19B250B362 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C29A6523D84EBD603F9AA4EC9FC6F587 /* Pods-Montreal Luxe ResortTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Montreal Luxe ResortTests/Pods-Montreal Luxe ResortTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Montreal Luxe ResortTests/Pods-Montreal Luxe ResortTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C35BB8E7A5163DBD9B61E87E39BF88D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264A9231D8B24CEF38B0F397825C48A0 /* Pods-Montreal Luxe ResortTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Montreal Luxe ResortTests/Pods-Montreal Luxe ResortTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Montreal Luxe ResortTests/Pods-Montreal Luxe ResortTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD6BBBFCDB33783DB89645F32D633D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 526BCAAE0F57EF26143E6CBA13978108 /* Pods-Montreal Luxe Resort.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Montreal Luxe Resort/Pods-Montreal Luxe Resort-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Montreal Luxe Resort/Pods-Montreal Luxe Resort.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E873CA97BD124B21839AF13C9BE1CD18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		ED820FF41C8DED0E4DCE03200070E4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC40927C85467A6B632C58C19F2D38D /* Pods-Montreal Luxe Resort.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Montreal Luxe Resort/Pods-Montreal Luxe Resort-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Montreal Luxe Resort/Pods-Montreal Luxe Resort.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3CA7284323FF9A9AF552E4018024C4B7 /* Build configuration list for PBXNativeTarget "Pods-Montreal Luxe Resort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED820FF41C8DED0E4DCE03200070E4F4 /* Debug */,
+				DD6BBBFCDB33783DB89645F32D633D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A5C026ED62BBFE3380CD257EEFAEB20 /* Debug */,
+				E873CA97BD124B21839AF13C9BE1CD18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF87A512AB2CEB705E3CAAA928FDAEDF /* Build configuration list for PBXNativeTarget "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A33C6F8772F16E91619AAC5809879AD /* Debug */,
+				8B0C7551680C84FA42D38CAB94DF339B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6482D3AAA83CB074B8C7809402B29D0 /* Build configuration list for PBXNativeTarget "Pods-Montreal Luxe ResortTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C35BB8E7A5163DBD9B61E87E39BF88D4 /* Debug */,
+				A6449830F6E75B57575D4E19B250B362 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

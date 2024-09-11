@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests
+@end

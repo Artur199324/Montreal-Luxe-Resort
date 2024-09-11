@@ -1,0 +1,875 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0031AD689E673632EC085B22 /* Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F36C286E10DFB0B4F19C768 /* Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests.framework */; };
+		754F61B22C91A57E00A3488E /* Montreal_Luxe_ResortApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61B12C91A57E00A3488E /* Montreal_Luxe_ResortApp.swift */; };
+		754F61B42C91A57E00A3488E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61B32C91A57E00A3488E /* ContentView.swift */; };
+		754F61B62C91A57F00A3488E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F61B52C91A57F00A3488E /* Assets.xcassets */; };
+		754F61B92C91A57F00A3488E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754F61B82C91A57F00A3488E /* Preview Assets.xcassets */; };
+		754F61BB2C91A57F00A3488E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61BA2C91A57F00A3488E /* Persistence.swift */; };
+		754F61BE2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 754F61BC2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodeld */; };
+		754F61C82C91A58000A3488E /* Montreal_Luxe_ResortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61C72C91A58000A3488E /* Montreal_Luxe_ResortTests.swift */; };
+		754F61D22C91A58000A3488E /* Montreal_Luxe_ResortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61D12C91A58000A3488E /* Montreal_Luxe_ResortUITests.swift */; };
+		754F61D42C91A58000A3488E /* Montreal_Luxe_ResortUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61D32C91A58000A3488E /* Montreal_Luxe_ResortUITestsLaunchTests.swift */; };
+		754F61E22C91A6E500A3488E /* Fact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61E02C91A6E400A3488E /* Fact+CoreDataClass.swift */; };
+		754F61E32C91A6E500A3488E /* Fact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61E12C91A6E400A3488E /* Fact+CoreDataProperties.swift */; };
+		754F61E52C91A79700A3488E /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61E42C91A79700A3488E /* WelcomeView.swift */; };
+		754F61E82C91A83B00A3488E /* InterestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61E72C91A83B00A3488E /* InterestingView.swift */; };
+		754F61EA2C91AB0C00A3488E /* FactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61E92C91AB0C00A3488E /* FactDetailView.swift */; };
+		754F61EC2C91B80E00A3488E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61EB2C91B80E00A3488E /* CardView.swift */; };
+		754F61EE2C91BD0200A3488E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61ED2C91BD0200A3488E /* ImagePicker.swift */; };
+		754F61F02C91BD4100A3488E /* AddFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61EF2C91BD4100A3488E /* AddFactView.swift */; };
+		754F61F32C91CAB000A3488E /* HotelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61F22C91CAB000A3488E /* HotelsView.swift */; };
+		754F61F52C91D52500A3488E /* Hotel1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61F42C91D52500A3488E /* Hotel1View.swift */; };
+		754F61F72C91D53C00A3488E /* Hotel2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61F62C91D53C00A3488E /* Hotel2View.swift */; };
+		754F61F92C91D54900A3488E /* Hotel3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61F82C91D54900A3488E /* Hotel3View.swift */; };
+		754F61FB2C91D55700A3488E /* Hotel4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61FA2C91D55700A3488E /* Hotel4View.swift */; };
+		754F61FD2C91D56300A3488E /* Hotel5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61FC2C91D56300A3488E /* Hotel5View.swift */; };
+		754F61FF2C91D56E00A3488E /* Hotel6View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F61FE2C91D56E00A3488E /* Hotel6View.swift */; };
+		754F62012C91D57A00A3488E /* Hotel7View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62002C91D57A00A3488E /* Hotel7View.swift */; };
+		754F62032C91D58F00A3488E /* Hotel8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62022C91D58F00A3488E /* Hotel8View.swift */; };
+		754F62052C91F45900A3488E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62042C91F45900A3488E /* Comment.swift */; };
+		754F62072C91F47A00A3488E /* CommentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62062C91F47A00A3488E /* CommentsManager.swift */; };
+		754F620A2C92134C00A3488E /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62092C92134C00A3488E /* Questions.swift */; };
+		754F620C2C92274F00A3488E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F620B2C92274F00A3488E /* QuizView.swift */; };
+		756EF4D12C9A08130026EB10 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF4D02C9A08130026EB10 /* SettingsView.swift */; };
+		756EF4D32C9A0BBC0026EB10 /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF4D22C9A0BBC0026EB10 /* ContactUsView.swift */; };
+		756EF4D52C9A10990026EB10 /* TermsofUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF4D42C9A10990026EB10 /* TermsofUseView.swift */; };
+		756EF4D72C9A112A0026EB10 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF4D62C9A112A0026EB10 /* WebView.swift */; };
+		756EF4D92C9A11B80026EB10 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF4D82C9A11B80026EB10 /* PrivacyPolicyView.swift */; };
+		75B29DEE2C9C654D00E336DE /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 75B29DED2C9C654D00E336DE /* codemagic.yaml */; };
+		9385E3431CB4F12347A94E8C /* Pods_Montreal_Luxe_Resort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03244FF1C892522D9E1E0CE /* Pods_Montreal_Luxe_Resort.framework */; };
+		AA0C6ABF65874E393AE9E8DB /* Pods_Montreal_Luxe_ResortTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE5DD7F71FFA08AAEF1FB67 /* Pods_Montreal_Luxe_ResortTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		754F61C42C91A58000A3488E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754F61A62C91A57E00A3488E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754F61AD2C91A57E00A3488E;
+			remoteInfo = "Montreal Luxe Resort";
+		};
+		754F61CE2C91A58000A3488E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754F61A62C91A57E00A3488E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754F61AD2C91A57E00A3488E;
+			remoteInfo = "Montreal Luxe Resort";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F36C286E10DFB0B4F19C768 /* Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AE5DD7F71FFA08AAEF1FB67 /* Pods_Montreal_Luxe_ResortTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Montreal_Luxe_ResortTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		477A8E765EF9BA854061A9BC /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig"; sourceTree = "<group>"; };
+		72D0B579193EDD5951B2E965 /* Pods-Montreal Luxe ResortTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe ResortTests.release.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe ResortTests/Pods-Montreal Luxe ResortTests.release.xcconfig"; sourceTree = "<group>"; };
+		754F61AE2C91A57E00A3488E /* Montreal Luxe Resort.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Montreal Luxe Resort.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F61B12C91A57E00A3488E /* Montreal_Luxe_ResortApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Montreal_Luxe_ResortApp.swift; sourceTree = "<group>"; };
+		754F61B32C91A57E00A3488E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		754F61B52C91A57F00A3488E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		754F61B82C91A57F00A3488E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		754F61BA2C91A57F00A3488E /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		754F61BD2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Montreal_Luxe_Resort.xcdatamodel; sourceTree = "<group>"; };
+		754F61C32C91A58000A3488E /* Montreal Luxe ResortTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Montreal Luxe ResortTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F61C72C91A58000A3488E /* Montreal_Luxe_ResortTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Montreal_Luxe_ResortTests.swift; sourceTree = "<group>"; };
+		754F61CD2C91A58000A3488E /* Montreal Luxe ResortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Montreal Luxe ResortUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		754F61D12C91A58000A3488E /* Montreal_Luxe_ResortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Montreal_Luxe_ResortUITests.swift; sourceTree = "<group>"; };
+		754F61D32C91A58000A3488E /* Montreal_Luxe_ResortUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Montreal_Luxe_ResortUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		754F61E02C91A6E400A3488E /* Fact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		754F61E12C91A6E400A3488E /* Fact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		754F61E42C91A79700A3488E /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		754F61E72C91A83B00A3488E /* InterestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestingView.swift; sourceTree = "<group>"; };
+		754F61E92C91AB0C00A3488E /* FactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactDetailView.swift; sourceTree = "<group>"; };
+		754F61EB2C91B80E00A3488E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		754F61ED2C91BD0200A3488E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		754F61EF2C91BD4100A3488E /* AddFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFactView.swift; sourceTree = "<group>"; };
+		754F61F22C91CAB000A3488E /* HotelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsView.swift; sourceTree = "<group>"; };
+		754F61F42C91D52500A3488E /* Hotel1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel1View.swift; sourceTree = "<group>"; };
+		754F61F62C91D53C00A3488E /* Hotel2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel2View.swift; sourceTree = "<group>"; };
+		754F61F82C91D54900A3488E /* Hotel3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel3View.swift; sourceTree = "<group>"; };
+		754F61FA2C91D55700A3488E /* Hotel4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel4View.swift; sourceTree = "<group>"; };
+		754F61FC2C91D56300A3488E /* Hotel5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel5View.swift; sourceTree = "<group>"; };
+		754F61FE2C91D56E00A3488E /* Hotel6View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel6View.swift; sourceTree = "<group>"; };
+		754F62002C91D57A00A3488E /* Hotel7View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel7View.swift; sourceTree = "<group>"; };
+		754F62022C91D58F00A3488E /* Hotel8View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel8View.swift; sourceTree = "<group>"; };
+		754F62042C91F45900A3488E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		754F62062C91F47A00A3488E /* CommentsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsManager.swift; sourceTree = "<group>"; };
+		754F62092C92134C00A3488E /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		754F620B2C92274F00A3488E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		756EF4D02C9A08130026EB10 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		756EF4D22C9A0BBC0026EB10 /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
+		756EF4D42C9A10990026EB10 /* TermsofUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsofUseView.swift; sourceTree = "<group>"; };
+		756EF4D62C9A112A0026EB10 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		756EF4D82C9A11B80026EB10 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		75B29DED2C9C654D00E336DE /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
+		7E6DA1BACB9A9859732F57EF /* Pods-Montreal Luxe Resort.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe Resort.debug.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe Resort/Pods-Montreal Luxe Resort.debug.xcconfig"; sourceTree = "<group>"; };
+		B75204336EEA18ABC3315D34 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D03244FF1C892522D9E1E0CE /* Pods_Montreal_Luxe_Resort.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Montreal_Luxe_Resort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8288E5A051B9176160882F7 /* Pods-Montreal Luxe ResortTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe ResortTests.debug.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe ResortTests/Pods-Montreal Luxe ResortTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E1D3716A329E76E1AF9BDF19 /* Pods-Montreal Luxe Resort.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe Resort.release.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe Resort/Pods-Montreal Luxe Resort.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		754F61AB2C91A57E00A3488E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9385E3431CB4F12347A94E8C /* Pods_Montreal_Luxe_Resort.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F61C02C91A58000A3488E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0C6ABF65874E393AE9E8DB /* Pods_Montreal_Luxe_ResortTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F61CA2C91A58000A3488E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0031AD689E673632EC085B22 /* Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		754F61A52C91A57E00A3488E = {
+			isa = PBXGroup;
+			children = (
+				75B29DED2C9C654D00E336DE /* codemagic.yaml */,
+				754F61B02C91A57E00A3488E /* Montreal Luxe Resort */,
+				754F61C62C91A58000A3488E /* Montreal Luxe ResortTests */,
+				754F61D02C91A58000A3488E /* Montreal Luxe ResortUITests */,
+				754F61AF2C91A57E00A3488E /* Products */,
+				A8492637268481DFA69DA2A5 /* Pods */,
+				FA2AD6F1E0AF77DCBB13DFC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		754F61AF2C91A57E00A3488E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				754F61AE2C91A57E00A3488E /* Montreal Luxe Resort.app */,
+				754F61C32C91A58000A3488E /* Montreal Luxe ResortTests.xctest */,
+				754F61CD2C91A58000A3488E /* Montreal Luxe ResortUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		754F61B02C91A57E00A3488E /* Montreal Luxe Resort */ = {
+			isa = PBXGroup;
+			children = (
+				756EF4CD2C9A07CF0026EB10 /* settings */,
+				754F61E02C91A6E400A3488E /* Fact+CoreDataClass.swift */,
+				754F61E12C91A6E400A3488E /* Fact+CoreDataProperties.swift */,
+				754F62082C9212FE00A3488E /* quiz */,
+				754F61F12C91CA8E00A3488E /* hotels */,
+				754F61E62C91A81E00A3488E /* interesting */,
+				754F61B12C91A57E00A3488E /* Montreal_Luxe_ResortApp.swift */,
+				754F61B32C91A57E00A3488E /* ContentView.swift */,
+				754F61B52C91A57F00A3488E /* Assets.xcassets */,
+				754F61BA2C91A57F00A3488E /* Persistence.swift */,
+				754F61BC2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodeld */,
+				754F61B72C91A57F00A3488E /* Preview Content */,
+				754F61E42C91A79700A3488E /* WelcomeView.swift */,
+			);
+			path = "Montreal Luxe Resort";
+			sourceTree = "<group>";
+		};
+		754F61B72C91A57F00A3488E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				754F61B82C91A57F00A3488E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		754F61C62C91A58000A3488E /* Montreal Luxe ResortTests */ = {
+			isa = PBXGroup;
+			children = (
+				754F61C72C91A58000A3488E /* Montreal_Luxe_ResortTests.swift */,
+			);
+			path = "Montreal Luxe ResortTests";
+			sourceTree = "<group>";
+		};
+		754F61D02C91A58000A3488E /* Montreal Luxe ResortUITests */ = {
+			isa = PBXGroup;
+			children = (
+				754F61D12C91A58000A3488E /* Montreal_Luxe_ResortUITests.swift */,
+				754F61D32C91A58000A3488E /* Montreal_Luxe_ResortUITestsLaunchTests.swift */,
+			);
+			path = "Montreal Luxe ResortUITests";
+			sourceTree = "<group>";
+		};
+		754F61E62C91A81E00A3488E /* interesting */ = {
+			isa = PBXGroup;
+			children = (
+				754F61E72C91A83B00A3488E /* InterestingView.swift */,
+				754F61E92C91AB0C00A3488E /* FactDetailView.swift */,
+				754F61EB2C91B80E00A3488E /* CardView.swift */,
+				754F61ED2C91BD0200A3488E /* ImagePicker.swift */,
+				754F61EF2C91BD4100A3488E /* AddFactView.swift */,
+			);
+			path = interesting;
+			sourceTree = "<group>";
+		};
+		754F61F12C91CA8E00A3488E /* hotels */ = {
+			isa = PBXGroup;
+			children = (
+				754F61F22C91CAB000A3488E /* HotelsView.swift */,
+				754F61F42C91D52500A3488E /* Hotel1View.swift */,
+				754F61F62C91D53C00A3488E /* Hotel2View.swift */,
+				754F61F82C91D54900A3488E /* Hotel3View.swift */,
+				754F61FA2C91D55700A3488E /* Hotel4View.swift */,
+				754F61FC2C91D56300A3488E /* Hotel5View.swift */,
+				754F61FE2C91D56E00A3488E /* Hotel6View.swift */,
+				754F62002C91D57A00A3488E /* Hotel7View.swift */,
+				754F62022C91D58F00A3488E /* Hotel8View.swift */,
+				754F62042C91F45900A3488E /* Comment.swift */,
+				754F62062C91F47A00A3488E /* CommentsManager.swift */,
+			);
+			path = hotels;
+			sourceTree = "<group>";
+		};
+		754F62082C9212FE00A3488E /* quiz */ = {
+			isa = PBXGroup;
+			children = (
+				754F62092C92134C00A3488E /* Questions.swift */,
+				754F620B2C92274F00A3488E /* QuizView.swift */,
+			);
+			path = quiz;
+			sourceTree = "<group>";
+		};
+		756EF4CD2C9A07CF0026EB10 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				756EF4D02C9A08130026EB10 /* SettingsView.swift */,
+				756EF4D22C9A0BBC0026EB10 /* ContactUsView.swift */,
+				756EF4D42C9A10990026EB10 /* TermsofUseView.swift */,
+				756EF4D62C9A112A0026EB10 /* WebView.swift */,
+				756EF4D82C9A11B80026EB10 /* PrivacyPolicyView.swift */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		A8492637268481DFA69DA2A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E6DA1BACB9A9859732F57EF /* Pods-Montreal Luxe Resort.debug.xcconfig */,
+				E1D3716A329E76E1AF9BDF19 /* Pods-Montreal Luxe Resort.release.xcconfig */,
+				B75204336EEA18ABC3315D34 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig */,
+				477A8E765EF9BA854061A9BC /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig */,
+				D8288E5A051B9176160882F7 /* Pods-Montreal Luxe ResortTests.debug.xcconfig */,
+				72D0B579193EDD5951B2E965 /* Pods-Montreal Luxe ResortTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA2AD6F1E0AF77DCBB13DFC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D03244FF1C892522D9E1E0CE /* Pods_Montreal_Luxe_Resort.framework */,
+				1F36C286E10DFB0B4F19C768 /* Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests.framework */,
+				2AE5DD7F71FFA08AAEF1FB67 /* Pods_Montreal_Luxe_ResortTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		754F61AD2C91A57E00A3488E /* Montreal Luxe Resort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F61D72C91A58000A3488E /* Build configuration list for PBXNativeTarget "Montreal Luxe Resort" */;
+			buildPhases = (
+				AE7AED1B98DE35C17D0149AB /* [CP] Check Pods Manifest.lock */,
+				754F61AA2C91A57E00A3488E /* Sources */,
+				754F61AB2C91A57E00A3488E /* Frameworks */,
+				754F61AC2C91A57E00A3488E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Montreal Luxe Resort";
+			productName = "Montreal Luxe Resort";
+			productReference = 754F61AE2C91A57E00A3488E /* Montreal Luxe Resort.app */;
+			productType = "com.apple.product-type.application";
+		};
+		754F61C22C91A58000A3488E /* Montreal Luxe ResortTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F61DA2C91A58000A3488E /* Build configuration list for PBXNativeTarget "Montreal Luxe ResortTests" */;
+			buildPhases = (
+				D2E2D7BD8F8287023DD28829 /* [CP] Check Pods Manifest.lock */,
+				754F61BF2C91A58000A3488E /* Sources */,
+				754F61C02C91A58000A3488E /* Frameworks */,
+				754F61C12C91A58000A3488E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754F61C52C91A58000A3488E /* PBXTargetDependency */,
+			);
+			name = "Montreal Luxe ResortTests";
+			productName = "Montreal Luxe ResortTests";
+			productReference = 754F61C32C91A58000A3488E /* Montreal Luxe ResortTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		754F61CC2C91A58000A3488E /* Montreal Luxe ResortUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754F61DD2C91A58000A3488E /* Build configuration list for PBXNativeTarget "Montreal Luxe ResortUITests" */;
+			buildPhases = (
+				8B2F81C9CE50614DC435A9D2 /* [CP] Check Pods Manifest.lock */,
+				754F61C92C91A58000A3488E /* Sources */,
+				754F61CA2C91A58000A3488E /* Frameworks */,
+				754F61CB2C91A58000A3488E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754F61CF2C91A58000A3488E /* PBXTargetDependency */,
+			);
+			name = "Montreal Luxe ResortUITests";
+			productName = "Montreal Luxe ResortUITests";
+			productReference = 754F61CD2C91A58000A3488E /* Montreal Luxe ResortUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		754F61A62C91A57E00A3488E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					754F61AD2C91A57E00A3488E = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					754F61C22C91A58000A3488E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 754F61AD2C91A57E00A3488E;
+					};
+					754F61CC2C91A58000A3488E = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 754F61AD2C91A57E00A3488E;
+					};
+				};
+			};
+			buildConfigurationList = 754F61A92C91A57E00A3488E /* Build configuration list for PBXProject "Montreal Luxe Resort" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 754F61A52C91A57E00A3488E;
+			productRefGroup = 754F61AF2C91A57E00A3488E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				754F61AD2C91A57E00A3488E /* Montreal Luxe Resort */,
+				754F61C22C91A58000A3488E /* Montreal Luxe ResortTests */,
+				754F61CC2C91A58000A3488E /* Montreal Luxe ResortUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		754F61AC2C91A57E00A3488E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75B29DEE2C9C654D00E336DE /* codemagic.yaml in Resources */,
+				754F61B92C91A57F00A3488E /* Preview Assets.xcassets in Resources */,
+				754F61B62C91A57F00A3488E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F61C12C91A58000A3488E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F61CB2C91A58000A3488E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B2F81C9CE50614DC435A9D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE7AED1B98DE35C17D0149AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Montreal Luxe Resort-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E2D7BD8F8287023DD28829 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Montreal Luxe ResortTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		754F61AA2C91A57E00A3488E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F61BB2C91A57F00A3488E /* Persistence.swift in Sources */,
+				754F61FD2C91D56300A3488E /* Hotel5View.swift in Sources */,
+				754F620C2C92274F00A3488E /* QuizView.swift in Sources */,
+				756EF4D92C9A11B80026EB10 /* PrivacyPolicyView.swift in Sources */,
+				754F62072C91F47A00A3488E /* CommentsManager.swift in Sources */,
+				754F61B42C91A57E00A3488E /* ContentView.swift in Sources */,
+				754F61F02C91BD4100A3488E /* AddFactView.swift in Sources */,
+				754F61E22C91A6E500A3488E /* Fact+CoreDataClass.swift in Sources */,
+				754F61E32C91A6E500A3488E /* Fact+CoreDataProperties.swift in Sources */,
+				754F61FB2C91D55700A3488E /* Hotel4View.swift in Sources */,
+				754F61F92C91D54900A3488E /* Hotel3View.swift in Sources */,
+				754F61F72C91D53C00A3488E /* Hotel2View.swift in Sources */,
+				754F62052C91F45900A3488E /* Comment.swift in Sources */,
+				754F62012C91D57A00A3488E /* Hotel7View.swift in Sources */,
+				754F61EC2C91B80E00A3488E /* CardView.swift in Sources */,
+				754F61F32C91CAB000A3488E /* HotelsView.swift in Sources */,
+				754F62032C91D58F00A3488E /* Hotel8View.swift in Sources */,
+				754F61BE2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodeld in Sources */,
+				754F61B22C91A57E00A3488E /* Montreal_Luxe_ResortApp.swift in Sources */,
+				754F61F52C91D52500A3488E /* Hotel1View.swift in Sources */,
+				756EF4D72C9A112A0026EB10 /* WebView.swift in Sources */,
+				756EF4D52C9A10990026EB10 /* TermsofUseView.swift in Sources */,
+				754F61EE2C91BD0200A3488E /* ImagePicker.swift in Sources */,
+				756EF4D32C9A0BBC0026EB10 /* ContactUsView.swift in Sources */,
+				754F61FF2C91D56E00A3488E /* Hotel6View.swift in Sources */,
+				754F61E52C91A79700A3488E /* WelcomeView.swift in Sources */,
+				754F620A2C92134C00A3488E /* Questions.swift in Sources */,
+				754F61EA2C91AB0C00A3488E /* FactDetailView.swift in Sources */,
+				754F61E82C91A83B00A3488E /* InterestingView.swift in Sources */,
+				756EF4D12C9A08130026EB10 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F61BF2C91A58000A3488E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F61C82C91A58000A3488E /* Montreal_Luxe_ResortTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754F61C92C91A58000A3488E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754F61D22C91A58000A3488E /* Montreal_Luxe_ResortUITests.swift in Sources */,
+				754F61D42C91A58000A3488E /* Montreal_Luxe_ResortUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		754F61C52C91A58000A3488E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754F61AD2C91A57E00A3488E /* Montreal Luxe Resort */;
+			targetProxy = 754F61C42C91A58000A3488E /* PBXContainerItemProxy */;
+		};
+		754F61CF2C91A58000A3488E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754F61AD2C91A57E00A3488E /* Montreal Luxe Resort */;
+			targetProxy = 754F61CE2C91A58000A3488E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		754F61D52C91A58000A3488E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		754F61D62C91A58000A3488E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		754F61D82C91A58000A3488E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E6DA1BACB9A9859732F57EF /* Pods-Montreal Luxe Resort.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Montreal Luxe Resort/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		754F61D92C91A58000A3488E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D3716A329E76E1AF9BDF19 /* Pods-Montreal Luxe Resort.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Montreal Luxe Resort/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		754F61DB2C91A58000A3488E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8288E5A051B9176160882F7 /* Pods-Montreal Luxe ResortTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Montreal Luxe Resort.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Montreal Luxe Resort";
+			};
+			name = Debug;
+		};
+		754F61DC2C91A58000A3488E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D0B579193EDD5951B2E965 /* Pods-Montreal Luxe ResortTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Montreal Luxe Resort.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Montreal Luxe Resort";
+			};
+			name = Release;
+		};
+		754F61DE2C91A58000A3488E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B75204336EEA18ABC3315D34 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Montreal Luxe Resort";
+			};
+			name = Debug;
+		};
+		754F61DF2C91A58000A3488E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477A8E765EF9BA854061A9BC /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Montreal Luxe Resort";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		754F61A92C91A57E00A3488E /* Build configuration list for PBXProject "Montreal Luxe Resort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F61D52C91A58000A3488E /* Debug */,
+				754F61D62C91A58000A3488E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F61D72C91A58000A3488E /* Build configuration list for PBXNativeTarget "Montreal Luxe Resort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F61D82C91A58000A3488E /* Debug */,
+				754F61D92C91A58000A3488E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F61DA2C91A58000A3488E /* Build configuration list for PBXNativeTarget "Montreal Luxe ResortTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F61DB2C91A58000A3488E /* Debug */,
+				754F61DC2C91A58000A3488E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754F61DD2C91A58000A3488E /* Build configuration list for PBXNativeTarget "Montreal Luxe ResortUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754F61DE2C91A58000A3488E /* Debug */,
+				754F61DF2C91A58000A3488E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		754F61BC2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				754F61BD2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodel */,
+			);
+			currentVersion = 754F61BD2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodel */;
+			path = Montreal_Luxe_Resort.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 754F61A62C91A57E00A3488E /* Project object */;
+}

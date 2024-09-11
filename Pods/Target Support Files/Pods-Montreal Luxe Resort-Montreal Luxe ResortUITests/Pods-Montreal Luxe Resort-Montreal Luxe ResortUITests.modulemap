@@ -1,0 +1,6 @@
+framework module Pods_Montreal_Luxe_Resort_Montreal_Luxe_ResortUITests {
+  umbrella header "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -32,10 +32,14 @@ workflows:
           find . -name "*.swift" -print0 | xargs -0 sed -i '' -e 's/\b(\w+)\b/$1_obf/g'
       - name: Build ipa for distribution
         script: |
-          xcodebuild -workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" -scheme "$XCODE_SCHEME" archive -archivePath "$CM_BUILD_DIR/build/ios/xcarchive/$XCODE_SCHEME.xcarchive" | tee xcodebuild.log
-          xcodebuild -exportArchive -archivePath "$CM_BUILD_DIR/build/ios/xcarchive/$XCODE_SCHEME.xcarchive" -exportOptionsPlist ExportOptions.plist -exportPath "$CM_BUILD_DIR/build/ios/ipa" | tee -a xcodebuild.log
+          xcode-project build-ipa \
+            --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
+            --scheme "$XCODE_SCHEME"
     artifacts:
       - build/ios/ipa/*.ipa
+      - /tmp/xcodebuild_logs/*.log
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+      - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
     publishing:
       email:
         recipients:

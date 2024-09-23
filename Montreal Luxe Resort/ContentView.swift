@@ -9,25 +9,29 @@ import SwiftUI
 
 
 struct ContentView: View {
-  
+    @AppStorage("isEULAAccepted") private var isEULAAccepted: Bool = false
     @State private var isWelcome = false
     var body: some View {
-        VStack{
-            Spacer()
-            Button(action: {
-                isWelcome.toggle()
-            }, label: {
+        if isEULAAccepted {
+            VStack{
+                Spacer()
+                Button(action: {
+                    isWelcome.toggle()
+                }, label: {
+                    
+                    Image("Frame 5")
+                }).padding(.bottom,20)
                 
-                Image("Frame 5")
-            }).padding(.bottom,20)
-            
-        }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
-            .background(Image("onboarding")
-                .ignoresSafeArea()
-            )
-            .fullScreenCover(isPresented: $isWelcome, content: {
-                WelcomeView()
-            })
+            }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
+                .background(Image("onboarding")
+                    .ignoresSafeArea()
+                )
+                .fullScreenCover(isPresented: $isWelcome, content: {
+                    WelcomeView()
+                })
+        }else{
+            EULAScreen()
+        }
     }
  
 }

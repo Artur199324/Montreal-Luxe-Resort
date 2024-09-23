@@ -14,7 +14,7 @@ struct Hotel2View: View {
     @State private var message: String = ""
     @Environment(\.dismiss) var dismiss
     @State private var selectedSegment = 0
-    private let segments = ["Description", "Photos", "Comments"]
+    private let segments = ["Description", "Photos"]
     
     var body: some View {
         VStack {

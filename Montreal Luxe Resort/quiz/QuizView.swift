@@ -49,87 +49,89 @@ struct QuizView: View {
     }()
     
     var body: some View {
-        ZStack {
-        
-            VStack {
-                HStack {
-                    Button {
-                        self.dismiss()
-                    } label: {
-                        Image("tabler-icon-arrow-narrow-left 1")
-                    }
-                    .padding(.leading, 20)
-                    
-                    Text("Montreal Casino")
-                        .foregroundColor(.black)
-                        .font(.title.bold())
+        GeometryReader { geometry in
+            ZStack {
+                
+                VStack {
+                    HStack {
+                        Button {
+                            self.dismiss()
+                        } label: {
+                            Image("tabler-icon-arrow-narrow-left 1")
+                        }
                         .padding(.leading, 20)
+                        
+                        Text("Montreal Casino")
+                            .foregroundColor(.black)
+                            .font(.title.bold())
+                            .padding(.leading, 20)
+                        
+                        Spacer()
+                        
+                        
+                    }
+                    .padding(.top, 60)
+                    
+                    HStack {
+                        Spacer()
+                        Text("\(timeRemaining)")
+                            .foregroundColor(Color("pin"))
+                            .font(.title3)
+                            .padding(.trailing,30)
+                    }
+                    .padding(.top, 20)
+                    
+                    Text("\(Questions.questions[numberQuestions])")
+                        .foregroundColor(.black)
+                        .font(.custom("Lalezar", size: 30))
+                        .multilineTextAlignment(.center)
+                        .padding(30)
+                        .background(Color(.white))
+                        .cornerRadius(20)
+                        .padding(.top, 40)
+                        .padding(.horizontal)
+                    
+                    HStack {
+                        buttonWithDelay(index: 0, one: $one, two: $two, three: $thre)
+                        buttonWithDelay(index: 1, one: $one2, two: $two2, three: $thre2)
+                    }
+                    
+                    HStack {
+                        buttonWithDelay(index: 2, one: $one3, two: $two3, three: $thre3)
+                        buttonWithDelay(index: 3, one: $one4, two: $two4, three: $thre4)
+                    }
                     
                     Spacer()
-                    
-    
-                }
-                .padding(.top, 60)
+                }.frame(maxWidth: .infinity,maxHeight: .infinity)
+                    .background(Color("bac")).ignoresSafeArea()
                 
-                HStack {
-                    Spacer()
-                    Text("\(timeRemaining)")
-                        .foregroundColor(Color("pin"))
-                        .font(.title3)
-                        .padding(.trailing,30)
-                }
-                .padding(.top, 20)
-                
-                Text("\(Questions.questions[numberQuestions])")
-                    .foregroundColor(.black)
-                    .font(.custom("Lalezar", size: 30))
-                    .multilineTextAlignment(.center)
-                    .padding(30)
-                    .background(Color(.white))
-                    .cornerRadius(20)
-                    .padding(.top, 40)
-                    .padding(.horizontal)
-                
-                HStack {
-                    buttonWithDelay(index: 0, one: $one, two: $two, three: $thre)
-                    buttonWithDelay(index: 1, one: $one2, two: $two2, three: $thre2)
+                // Full-screen overlays
+                if numberQuestions == Questions.wrong.count - 1 {
+                    if wrong >= 7 {
+                        resultOverlay(imageName: "ower", action: {
+                            increaseAndSaveValue(by: 150)
+                            stopTimer()
+                            self.dismiss()
+                        })
+                    } else {
+                        resultOverlay(imageName: "ower", action: {
+                            stopTimer()
+                            self.dismiss()
+                        })
+                    }
                 }
                 
-                HStack {
-                    buttonWithDelay(index: 2, one: $one3, two: $two3, three: $thre3)
-                    buttonWithDelay(index: 3, one: $one4, two: $two4, three: $thre4)
-                }
-                
-                Spacer()
-            }.frame(maxWidth: .infinity,maxHeight: .infinity)
-                .background(Color("bac")).ignoresSafeArea()
-            
-            // Full-screen overlays
-            if numberQuestions == Questions.wrong.count - 1 {
-                if wrong >= 7 {
-                    resultOverlay(imageName: "ower", action: {
-                        increaseAndSaveValue(by: 150)
-                        stopTimer()
-                        self.dismiss()
-                    })
-                } else {
+                if timeRemaining == 0 {
                     resultOverlay(imageName: "ower", action: {
                         stopTimer()
                         self.dismiss()
                     })
                 }
             }
-            
-            if timeRemaining == 0 {
-                resultOverlay(imageName: "ower", action: {
-                    stopTimer()
-                    self.dismiss()
-                })
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .onAppear {
+                startTimer()
             }
-        }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .onAppear {
-            startTimer()
         }
     }
     

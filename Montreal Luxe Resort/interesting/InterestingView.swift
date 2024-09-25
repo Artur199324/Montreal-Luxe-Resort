@@ -13,53 +13,55 @@ struct InterestingView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
-                HStack {
-                    Button(action: {
-                        self.dismiss()
-                    }, label: {
-                        Image("tabler-icon-arrow-narrow-left")
-                    })
-                    .padding(.leading, 20)
+            GeometryReader { geometry in
+                VStack {
+                    HStack {
+                        Button(action: {
+                            self.dismiss()
+                        }, label: {
+                            Image("tabler-icon-arrow-narrow-left")
+                        })
+                        .padding(.leading, 20)
+                        
+                        Text("Interesting")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.leading, 10)
+                        
+                        Spacer()
+                    }
+                    .padding(.top, 50)
                     
-                    Text("Interesting")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding(.leading, 10)
-                    
-                    Spacer()
-                }
-                .padding(.top, 50)
-
-                ScrollView {
-                    LazyVStack(spacing: 20) {
-                        ForEach(facts, id: \.id) { fact in
-                            NavigationLink(destination: FactDetailView(fact: fact)) {
-                                CardView(fact: fact)
+                    ScrollView {
+                        LazyVStack(spacing: 20) {
+                            ForEach(facts, id: \.id) { fact in
+                                NavigationLink(destination: FactDetailView(fact: fact)) {
+                                    CardView(fact: fact)
+                                }
                             }
                         }
+                        .padding(.horizontal)
+                        .padding(.top, 60)
+                        .padding(.bottom, 250)
                     }
-                    .padding(.horizontal)
-                    .padding(.top, 60)
-                    .padding(.bottom, 250)
+                    
+                    //                Button(action: {
+                    //                    isAddFact.toggle()
+                    //                }, label: {
+                    //                    Image("Frame 6")
+                    //                })
+                    //                .padding(.bottom, 50)
+                    
                 }
-                
-//                Button(action: {
-//                    isAddFact.toggle()
-//                }, label: {
-//                    Image("Frame 6")
-//                })
-//                .padding(.bottom, 50)
-               
-            }
-            .background(Image("interesting"))
-            .ignoresSafeArea()
-            .fullScreenCover(isPresented: $isAddFact, content: {
-                AddFactView()
-            })
-            .onAppear {
-                addDefaultFactsIfNeeded()
+                .background(Image("interesting"))
+                .ignoresSafeArea()
+                .fullScreenCover(isPresented: $isAddFact, content: {
+                    AddFactView()
+                })
+                .onAppear {
+                    addDefaultFactsIfNeeded()
+                }
             }
         }
     }

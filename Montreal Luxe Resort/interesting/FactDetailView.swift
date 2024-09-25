@@ -5,46 +5,48 @@ struct FactDetailView: View {
     let fact: Fact
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                // Отображаем изображение из базы данных
-                if let imageData = fact.photo, let uiImage = UIImage(data: imageData) {
-                    Image(uiImage: uiImage)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(maxWidth: .infinity, maxHeight: 300)
-                        .cornerRadius(15)
+        GeometryReader { geometry in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    // Отображаем изображение из базы данных
+                    if let imageData = fact.photo, let uiImage = UIImage(data: imageData) {
+                        Image(uiImage: uiImage)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(maxWidth: .infinity, maxHeight: 300)
+                            .cornerRadius(15)
+                            .padding([.leading, .trailing], 16)
+                    } else {
+                        // Показать изображение-заполнитель, если фото отсутствует
+                        Image(systemName: "photo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: .infinity, maxHeight: 200)
+                            .foregroundColor(.gray)
+                            .padding([.leading, .trailing], 16)
+                    }
+                    
+                    // Отображаем заголовок факта
+                    Text(fact.title ?? "Без названия")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(.primary)
                         .padding([.leading, .trailing], 16)
-                } else {
-                    // Показать изображение-заполнитель, если фото отсутствует
-                    Image(systemName: "photo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(maxWidth: .infinity, maxHeight: 200)
-                        .foregroundColor(.gray)
+                    
+                    // Отображаем основной текст факта
+                    Text(fact.text ?? "Описание отсутствует")
+                        .font(.body)
+                        .foregroundColor(.secondary)
                         .padding([.leading, .trailing], 16)
+                    
+                    Spacer()
                 }
-
-                // Отображаем заголовок факта
-                Text(fact.title ?? "Без названия")
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .foregroundColor(.primary)
-                    .padding([.leading, .trailing], 16)
-
-                // Отображаем основной текст факта
-                Text(fact.text ?? "Описание отсутствует")
-                    .font(.body)
-                    .foregroundColor(.secondary)
-                    .padding([.leading, .trailing], 16)
-                
-                Spacer()
+                .padding(.top, 16)
             }
-            .padding(.top, 16)
-        }
-        
+            
             .background(Color("bac"))
-        .navigationTitle("Details of the fact")
+            .navigationTitle("Details of the fact")
+        }
     }
 }
 

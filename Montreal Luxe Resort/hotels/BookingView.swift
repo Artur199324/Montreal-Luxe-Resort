@@ -11,6 +11,7 @@ struct BookingView: View {
     @State private var numberOfAdults = 2
     @State private var numberOfChildren = 1
     @State private var ok = true
+    @State private var thenk = false
     @State private var dat = ""
     private let calendar = Calendar.current
     private let years = Array(2020...2030)
@@ -131,11 +132,21 @@ struct BookingView: View {
                                 Spacer()
                                 Text("\(numberOfChildren)").padding(.trailing,20)
                             }.padding(.top,20)
-                            Button(action: {
-                                self.dismiss()
-                            }, label: {
-                                Image("con")
-                            }).padding(.top,40)
+                            
+                            HStack{
+                                Button {
+                                    ok.toggle()
+                                } label: {
+                                   Image("baccc")
+                                }
+
+                                Button(action: {
+                                    thenk.toggle()
+                                }, label: {
+                                    Image("coo")
+                                })
+                            }.padding(.top,30)
+                         
                             Spacer()
                         } .padding(.vertical)
                             .background(Color(UIColor(hex: "##F0EEFF")))
@@ -143,7 +154,26 @@ struct BookingView: View {
                     }
                 }
                 
-            }
+            }.overlay(content: {
+                if thenk {
+                    VStack{
+                        
+                        Image("Frame 70").overlay {
+                            Button(action: {
+                                self.dismiss()
+                            }, label: {
+                                Image("ok 1").padding(.top,350)
+                            })
+                        }
+                
+                        
+                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(Color.black.opacity(0.8))}
+                
+                
+                
+                
+            })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Image(img).resizable().scaledToFill())
         }

@@ -16,7 +16,8 @@ struct Hotel7View: View {
     @Environment(\.dismiss) var dismiss
     @State private var selectedSegment = 0
     private let segments = ["Description", "Photos"]
-    
+    @State var isbigImage = false
+    @State var bigImage = "po1"
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -71,22 +72,53 @@ struct Hotel7View: View {
                 } else if selectedSegment == 1 {
                     // Фотографии отеля
                     VStack {
+                        
+                        
                         HStack {
-                            Image("y1")
-                                .resizable()
-                                .scaledToFit()
-                            Image("y2")
-                                .resizable()
-                                .scaledToFit()
+                            Button {
+                                isbigImage.toggle()
+                                bigImage = "po1"
+                            } label: {
+                                Image("y1")
+                                    .resizable()
+                                    .scaledToFit()
+                            }
+                            
+                            Button {
+                                isbigImage.toggle()
+                                bigImage = "po2"
+                            } label: {
+                                Image("y2")
+                                    .resizable()
+                                    .scaledToFit()
+                            }
+                            
+                            
                         }
                         HStack {
-                            Image("y3")
-                                .resizable()
-                                .scaledToFit()
-                            Image("y4")
-                                .resizable()
-                                .scaledToFit()
+                            Button {
+                                isbigImage.toggle()
+                                bigImage = "po3"
+                            } label: {
+                                Image("y3")
+                                    .resizable()
+                                    .scaledToFit()
+                            }
+                            
+                            Button {
+                                isbigImage.toggle()
+                                bigImage = "po4"
+                            } label: {
+                                Image("y4")
+                                    .resizable()
+                                    .scaledToFit()
+                            }
+                            
                         }
+                        
+                        
+                        
+        
                     }
                     .padding()
                 } else if selectedSegment == 2 {
@@ -146,6 +178,26 @@ struct Hotel7View: View {
                 
                 Spacer()
             }
+            .overlay(content: {
+                if isbigImage {
+                    VStack{
+                        HStack{
+                            Spacer()
+                            Button(action: {
+                                isbigImage.toggle()
+                            }, label: {
+                                Text("Closed").foregroundColor(.white)
+                                    .font(.title3)
+                            }).padding()
+                        }
+                        Image(bigImage)
+                    }.frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color.black)
+                    
+                    
+                }
+               
+            })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Image("hotels7").resizable().scaledToFill()) // Убедитесь, что изображение существует
             .ignoresSafeArea()

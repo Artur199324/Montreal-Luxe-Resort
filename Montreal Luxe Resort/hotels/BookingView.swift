@@ -6,8 +6,8 @@ struct BookingView: View {
     @Environment(\.dismiss) var dismiss
     @State private var selectedStartDate: Date?
     @State private var selectedEndDate: Date?
-    @State private var selectedMonth = 9
-    @State private var selectedYear = 2024
+    @State private var selectedMonth = Calendar.current.component(.month, from: Date())
+    @State private var selectedYear = Calendar.current.component(.year, from: Date())
     @State private var numberOfAdults = 2
     @State private var numberOfChildren = 1
     @State private var ok = true
@@ -16,6 +16,7 @@ struct BookingView: View {
     private let calendar = Calendar.current
     private let years = Array(2020...2030)
     private let months = Array(1...12)
+    @State private var showAlert = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -176,6 +177,13 @@ struct BookingView: View {
             })
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Image(img).resizable().scaledToFill())
+            .alert(isPresented: $showAlert) {
+                          Alert(
+                              title: Text("Incomplete Booking"),
+                              message: Text("Please select both a start and end date."),
+                              dismissButton: .default(Text("OK"))
+                          )
+                      }
         }
     }
     
@@ -208,6 +216,7 @@ struct BookingView: View {
             ok.toggle()
         } else {
             print("Please select a start and end date.")
+            showAlert.toggle()
         }
     }
 }

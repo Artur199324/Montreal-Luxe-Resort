@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct Montreal_Luxe_ResortApp: App {
     let persistenceController = PersistenceController.shared
-
+    init() {
+          FirebaseApp.configure()
+      }
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -46,6 +46,8 @@
 		7590F6D52CA408E400B7CC92 /* EULAScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7590F6D42CA408E400B7CC92 /* EULAScreen.swift */; };
 		759A0E8B2CA54C0D003A9E77 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759A0E8A2CA54C0D003A9E77 /* BookingView.swift */; };
 		75B29DEE2C9C654D00E336DE /* codemagic.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 75B29DED2C9C654D00E336DE /* codemagic.yaml */; };
+		75DD9B362CAD411B00E3A995 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75DD9B352CAD411B00E3A995 /* GoogleService-Info.plist */; };
+		75DD9B392CAD42D100E3A995 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 75DD9B382CAD42D100E3A995 /* FirebaseFirestore */; };
 		9385E3431CB4F12347A94E8C /* Pods_Montreal_Luxe_Resort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03244FF1C892522D9E1E0CE /* Pods_Montreal_Luxe_Resort.framework */; };
 		AA0C6ABF65874E393AE9E8DB /* Pods_Montreal_Luxe_ResortTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE5DD7F71FFA08AAEF1FB67 /* Pods_Montreal_Luxe_ResortTests.framework */; };
 /* End PBXBuildFile section */
@@ -113,6 +115,7 @@
 		7590F6D42CA408E400B7CC92 /* EULAScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EULAScreen.swift; sourceTree = "<group>"; };
 		759A0E8A2CA54C0D003A9E77 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		75B29DED2C9C654D00E336DE /* codemagic.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = codemagic.yaml; sourceTree = "<group>"; };
+		75DD9B352CAD411B00E3A995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E6DA1BACB9A9859732F57EF /* Pods-Montreal Luxe Resort.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe Resort.debug.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe Resort/Pods-Montreal Luxe Resort.debug.xcconfig"; sourceTree = "<group>"; };
 		B75204336EEA18ABC3315D34 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D03244FF1C892522D9E1E0CE /* Pods_Montreal_Luxe_Resort.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Montreal_Luxe_Resort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9385E3431CB4F12347A94E8C /* Pods_Montreal_Luxe_Resort.framework in Frameworks */,
+				75DD9B392CAD42D100E3A995 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +155,7 @@
 		754F61A52C91A57E00A3488E = {
 			isa = PBXGroup;
 			children = (
+				75DD9B352CAD411B00E3A995 /* GoogleService-Info.plist */,
 				75B29DED2C9C654D00E336DE /* codemagic.yaml */,
 				754F61B02C91A57E00A3488E /* Montreal Luxe Resort */,
 				754F61C62C91A58000A3488E /* Montreal Luxe ResortTests */,
@@ -309,6 +314,9 @@
 			dependencies = (
 			);
 			name = "Montreal Luxe Resort";
+			packageProductDependencies = (
+				75DD9B382CAD42D100E3A995 /* FirebaseFirestore */,
+			);
 			productName = "Montreal Luxe Resort";
 			productReference = 754F61AE2C91A57E00A3488E /* Montreal Luxe Resort.app */;
 			productType = "com.apple.product-type.application";
@@ -383,6 +391,9 @@
 				Base,
 			);
 			mainGroup = 754F61A52C91A57E00A3488E;
+			packageReferences = (
+				75DD9B372CAD42D100E3A995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 754F61AF2C91A57E00A3488E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -400,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75B29DEE2C9C654D00E336DE /* codemagic.yaml in Resources */,
+				75DD9B362CAD411B00E3A995 /* GoogleService-Info.plist in Resources */,
 				754F61B92C91A57F00A3488E /* Preview Assets.xcassets in Resources */,
 				754F61B62C91A57F00A3488E /* Assets.xcassets in Resources */,
 			);
@@ -689,7 +701,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Montreal Luxe Resort/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -703,7 +715,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -723,7 +735,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Montreal Luxe Resort/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -737,7 +749,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 3.0;
+				MARKETING_VERSION = 4.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -870,6 +882,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75DD9B372CAD42D100E3A995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75DD9B382CAD42D100E3A995 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75DD9B372CAD42D100E3A995 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		754F61BC2C91A57F00A3488E /* Montreal_Luxe_Resort.xcdatamodeld */ = {

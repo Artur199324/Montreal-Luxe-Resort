@@ -1,5 +1,7 @@
 import SwiftUI
-
+import FirebaseCore
+import Firebase
+import FirebaseFirestore
 struct BookingView: View {
     @State var img:String
     @State  var title:String
@@ -17,6 +19,10 @@ struct BookingView: View {
     private let years = Array(2020...2030)
     private let months = Array(1...12)
     @State private var showAlert = false
+    @State private var phoneNumber: String = ""
+    @State private var name: String = ""  // Поле для ввода имени
+    //       @State private var showAlertName = false
+    @State private var alertMessage = ""
     
     var body: some View {
         GeometryReader { geometry in
@@ -102,6 +108,24 @@ struct BookingView: View {
                             }
                             .padding(.horizontal)
                             
+                            TextField("Your Name", text: $name)
+                                .padding()
+                                .background(Color.white.opacity(0.7))
+                                .cornerRadius(10)
+                                .padding(.horizontal, 24)
+                            
+                            // Поле для ввода номера телефона
+                            TextField("Phone Number", text: $phoneNumber)
+                                .keyboardType(.numberPad) // Используем цифровую клавиатуру
+                                .padding()
+                                .background(Color.white.opacity(0.7))
+                                .cornerRadius(10)
+                                .padding(.horizontal, 24)
+                                .onChange(of: phoneNumber) { oldValue, newValue in
+                                    // Оставляем только цифры в строке
+                                    phoneNumber = newValue.filter { "0123456789".contains($0) }
+                                }
+
                             // Book Now button
                             Button(action: {
                                 bookNow()
@@ -110,14 +134,24 @@ struct BookingView: View {
                             }
                             .padding(.horizontal)
                             .padding(.top, 10)
-                            
+                            Image("You will be called back to the number you provided!").padding(.top,30)
                         }
                         .padding(.vertical)
                         .background(Color(UIColor(hex: "##F0EEFF")))
                         Spacer()
                     }else{
                         VStack(spacing: 20) {
-                            Image("Thank you! You have successfully booked a hotel during this period. Enjoy your vacation.").padding(.top,20)
+                            Image("Please check that your information is correct").padding(.top,20)
+                            HStack{
+                                Image("Name").padding(.leading,20)
+                                Spacer()
+                                Text(name).padding(.trailing,20)
+                            }.padding(.top,20)
+                            HStack{
+                                Image("Phone").padding(.leading,20)
+                                Spacer()
+                                Text(phoneNumber).padding(.trailing,20)
+                            }.padding(.top,20)
                             HStack{
                                 Image("Dates").padding(.leading,20)
                                 Spacer()
@@ -138,16 +172,17 @@ struct BookingView: View {
                                 Button {
                                     ok.toggle()
                                 } label: {
-                                   Image("baccc")
+                                    Image("baccc")
                                 }
-
+                                
                                 Button(action: {
+                                    savePhoneNumberAndName()
                                     thenk.toggle()
                                 }, label: {
                                     Image("coo")
                                 })
                             }.padding(.top,30)
-                         
+                            
                             Spacer()
                         } .padding(.vertical)
                             .background(Color(UIColor(hex: "##F0EEFF")))
@@ -163,10 +198,10 @@ struct BookingView: View {
                             Button(action: {
                                 self.dismiss()
                             }, label: {
-                                Image("ok 1").padding(.top,350)
+                                Image("ok 1").padding(.top,300)
                             })
                         }
-                
+                        
                         
                     }.frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color.black.opacity(0.8))}
@@ -178,12 +213,9 @@ struct BookingView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Image(img).resizable().scaledToFill())
             .alert(isPresented: $showAlert) {
-                          Alert(
-                              title: Text("Incomplete Booking"),
-                              message: Text("Please select both a start and end date."),
-                              dismissButton: .default(Text("OK"))
-                          )
-                      }
+                Alert(title: Text("Booking Info"), message: Text(alertMessage), dismissButton: .default(Text("OK")))
+            }
+            
         }
     }
     
@@ -206,20 +238,58 @@ struct BookingView: View {
     
     // Function to handle booking action
     private func bookNow() {
+        // Проверяем, что введены и имя, и номер телефона
+        guard !phoneNumber.isEmpty, !name.isEmpty else {
+            alertMessage = "Please enter both name and phone number."
+            showAlert = true  // Показываем алерт для имени и телефона
+            return
+        }
+        
+        // Проверяем, что выбраны обе даты: стартовая и конечная
         if let startDate = selectedStartDate, let endDate = selectedEndDate {
             let dateFormatter = DateFormatter()
             dateFormatter.dateStyle = .medium
+            
+            // Форматируем строки для начала и конца периода бронирования
             let startString = dateFormatter.string(from: startDate)
             let endString = dateFormatter.string(from: endDate)
+            
             dat = "Booking from \(startString) to \(endString)"
             print("Booking from \(startString) to \(endString) in \(monthName(month: selectedMonth)) \(selectedYear)")
-            ok.toggle()
+           
+            ok.toggle()  // Успешная обработка, переход к другому состоянию
         } else {
-            print("Please select a start and end date.")
-            showAlert.toggle()
+            // Если даты не выбраны, показываем алерт
+            alertMessage = "Please select a start and end date."
+            showAlert = true  // Показ алерта, если не выбраны даты
         }
     }
-}
+    
+    private func savePhoneNumberAndName() {
+            let db = Firestore.firestore()  // Инициализация Firestore
+            
+            // Проверка, что имя и номер телефона введены
+           
+            
+            let userData: [String: Any] = [
+                "name": name,  // Имя пользователя
+                "phoneNumber": phoneNumber,  // Номер телефона
+                "timestamp": Timestamp(date: Date())  // Метка времени
+            ]
+            
+            // Сохранение данных в коллекцию "phoneNumbers"
+            db.collection("phoneNumbers").addDocument(data: userData) { error in
+                if let error = error {
+                    // Отображение сообщения об ошибке
+                    alertMessage = "Error saving data: \(error.localizedDescription)"
+                    showAlert = true
+                }
+               
+            }
+        }
+    }
+
+
 
 struct CalendarView: View {
     @Binding var selectedStartDate: Date?

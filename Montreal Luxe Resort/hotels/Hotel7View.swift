@@ -32,19 +32,27 @@ struct Hotel7View: View {
                 .padding(.top, 50)
                 .padding(.leading, 20)
                 
-                Picker("", selection: $selectedSegment) {
+                HStack(spacing: 0) {
                     ForEach(Array(segments.enumerated()), id: \.offset) { index, segment in
                         Text(segment)
-                            .tag(index)
+                            .font(.system(size: 16))  // Уменьшенный размер шрифта
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)  // Уменьшаем вертикальные отступы для уменьшения высоты
+                            .padding(.horizontal, 1)  // Немного уменьшим горизонтальные отступы
+                            .background(selectedSegment == index ? Color("col1") : Color.clear)  // Цвет фона для выбранного элемента
+                            .foregroundColor(selectedSegment == index ? Color.white : Color.white )  // Цвет текста для выбранного элемента
+                            .cornerRadius(10)
+                            .onTapGesture {
+                                selectedSegment = index  // Обновляем выбранный сегмент
+                            }
                     }
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                .background(Color.purple.opacity(0.2)) // Фон для всего Picker
-                .cornerRadius(20) // Скругление углов
+                .padding(.vertical, 5)  // Уменьшение общей высоты переключателя
+                .background(Color("col2"))  // Фон для всего переключателя
+                .cornerRadius(20)  // Скругление углов
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.purple.opacity(0.5), lineWidth: 2) // Рамка вокруг Picker
+                        .stroke(Color.purple.opacity(0.5), lineWidth: 2)  // Рамка вокруг переключателя
                 )
                 .padding(.horizontal, 16)
                 .padding(.top, 300)
@@ -54,9 +62,11 @@ struct Hotel7View: View {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Loews Hotel Vogue")
+                                .foregroundColor(.white)
                                 .font(.title)
                                 .padding()
                             Text("Welcome to Vogue Hotel Montreal Downtown Curio Collection by Hilton. Nestled amongst the popular boutiques and world-renowned museums and galleries in the heart of Montreal's Golden Square Mile, the city's fashionable culture hub.\n\nThe Vogue Hotel Montreal brings together the sophistication of legendary luxury hotels around the world with a chic intimacy and spirit that celebrates local culture and style.\n\nWe hope you enjoy Yama our mountain-inspired restaurant and cocktail bar from the imagination of renowned Chef Antonio Park as well as the elegant pastries prepared in the French tradition at Cafe Bazin.\n\nEnjoy the Cabinet of Curiosities in our main floor library as you take in the sights and sounds of Montreal's best address.")
+                                .foregroundColor(Color("col3"))
                                 .padding(.horizontal)
                             Image("Frame 32")
                                 .resizable()

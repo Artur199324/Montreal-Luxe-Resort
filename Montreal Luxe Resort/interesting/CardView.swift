@@ -31,7 +31,7 @@ struct CardView: View {
             VStack(alignment: .leading) {
                 Text(fact.title ?? "Без названия")
                     .font(.headline)
-                    .foregroundColor(.primary)
+                    .foregroundColor(.white)
 //                Text(fact.text ?? "Описание отсутствует")
 //                    .font(.subheadline)
 //                    .foregroundColor(.secondary)
@@ -43,7 +43,7 @@ struct CardView: View {
             }
             .padding([.leading, .bottom, .trailing], 10)
         }
-        .background(Color.white)
+        .background(Color("bac"))
         .cornerRadius(15)
         .shadow(color: .black.opacity(0.1), radius: 5, x: 0, y: 5)
     }

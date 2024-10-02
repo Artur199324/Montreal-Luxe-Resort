@@ -32,19 +32,27 @@ struct Hotel6View: View {
                 .padding(.top, 50)
                 .padding(.leading, 20)
                 
-                Picker("", selection: $selectedSegment) {
+                HStack(spacing: 0) {
                     ForEach(Array(segments.enumerated()), id: \.offset) { index, segment in
                         Text(segment)
-                            .tag(index)
+                            .font(.system(size: 16))  // Уменьшенный размер шрифта
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)  // Уменьшаем вертикальные отступы для уменьшения высоты
+                            .padding(.horizontal, 1)  // Немного уменьшим горизонтальные отступы
+                            .background(selectedSegment == index ? Color("col1") : Color.clear)  // Цвет фона для выбранного элемента
+                            .foregroundColor(selectedSegment == index ? Color.white : Color.white )  // Цвет текста для выбранного элемента
+                            .cornerRadius(10)
+                            .onTapGesture {
+                                selectedSegment = index  // Обновляем выбранный сегмент
+                            }
                     }
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                .background(Color.purple.opacity(0.2)) // Фон для всего Picker
-                .cornerRadius(20) // Скругление углов
+                .padding(.vertical, 5)  // Уменьшение общей высоты переключателя
+                .background(Color("col2"))  // Фон для всего переключателя
+                .cornerRadius(20)  // Скругление углов
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.purple.opacity(0.5), lineWidth: 2) // Рамка вокруг Picker
+                        .stroke(Color.purple.opacity(0.5), lineWidth: 2)  // Рамка вокруг переключателя
                 )
                 .padding(.horizontal, 16)
                 .padding(.top, 300)
@@ -54,9 +62,11 @@ struct Hotel6View: View {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Hotel Place d’Armes")
+                                .foregroundColor(.white)
                                 .font(.title)
                                 .padding()
                             Text("Hotel Place d'Armes features 116 rooms and 53 suites, including six studios with private terrace and five large penthouses where the decor blends contemporary design with ancient architecture.\n\nThe 4 historic buildings housing Hotel Place d'Armes all date back to the late 19th century. These regal structures were originally home to some of the pre-eminent businesses of the time, and their architecture recalls an era devoted to unmatched craftsmanship and detail.\n\nHotel Features: - 7 meeting rooms and a modular ballroom that can accommodate up to 350 people, with natural light, stone or brick walls and equipped with comfortable furniture - 2 restaurants and a spa - Rooftop Terrace.")
+                                .foregroundColor(Color("col3"))
                                 .padding(.horizontal)
                             Image("Frame 32")
                                 .resizable()

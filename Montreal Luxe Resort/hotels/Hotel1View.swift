@@ -26,32 +26,46 @@ struct Hotel1View: View {
                 .padding(.top, 50)
                 .padding(.leading, 20)
                 
-                Picker("", selection: $selectedSegment) {
+                HStack(spacing: 0) {
                     ForEach(Array(segments.enumerated()), id: \.offset) { index, segment in
                         Text(segment)
-                            .tag(index)
+                            .font(.system(size: 16))  // Уменьшенный размер шрифта
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)  // Уменьшаем вертикальные отступы для уменьшения высоты
+                            .padding(.horizontal, 1)  // Немного уменьшим горизонтальные отступы
+                            .background(selectedSegment == index ? Color("col1") : Color.clear)  // Цвет фона для выбранного элемента
+                            .foregroundColor(selectedSegment == index ? Color.white : Color.white )  // Цвет текста для выбранного элемента
+                            .cornerRadius(10)
+                            .onTapGesture {
+                                selectedSegment = index  // Обновляем выбранный сегмент
+                            }
                     }
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                .background(Color.purple.opacity(0.2)) // Фон для всего Picker
-                .cornerRadius(20) // Скругление углов
+                .padding(.vertical, 5)  // Уменьшение общей высоты переключателя
+                .background(Color("col2"))  // Фон для всего переключателя
+                .cornerRadius(20)  // Скругление углов
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.purple.opacity(0.5), lineWidth: 2) // Рамка вокруг Picker
+                        .stroke(Color.purple.opacity(0.5), lineWidth: 2)  // Рамка вокруг переключателя
                 )
                 .padding(.horizontal, 16)
                 .padding(.top, 300)
+
+
+
+
                 
                 if selectedSegment == 0 {
                     // Описание отеля
                     ScrollView {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Montreal Casino")
+                                .foregroundColor(.white)
                                 .font(.title)
                                 .padding()
                             Text("The Casino de Montréal is the best casino in Montreal… because it’s the only one actually in the city. But it’s a beautiful venue that was designed for Expo 67 and later turned into a casino, so it’s got that mid-century architecture vibe.\n \nThe casino has been renovated and expanded fairly recently, which made room for a lot more slot machines, as well as entertainment venues. There’s a theatre with shows (some dinner shows) and a dance floor and bar with live music every evening. So even if you don’t want to play the slots, there are plenty of things for you to enjoy.")
                                 .padding(.horizontal)
+                                .foregroundColor(Color("col3"))
                             Image("Frame 32")
                                 .resizable()
                                 .scaledToFit()
@@ -205,6 +219,7 @@ struct Hotel1View: View {
         name = ""   // Сброс поля имени
         message = "" // Сброс поля сообщения
     }
+    
 }
 
 #Preview {

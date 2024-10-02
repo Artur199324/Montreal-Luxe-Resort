@@ -30,23 +30,58 @@ struct FactDetailView: View {
                     Text(fact.title ?? "Без названия")
                         .font(.title)
                         .fontWeight(.bold)
-                        .foregroundColor(.primary)
+                        .foregroundColor(.white)
                         .padding([.leading, .trailing], 16)
                     
                     // Отображаем основной текст факта
                     Text(fact.text ?? "Описание отсутствует")
                         .font(.body)
-                        .foregroundColor(.secondary)
+                        .foregroundColor(Color("col3"))
                         .padding([.leading, .trailing], 16)
                     
                     Spacer()
                 }
                 .padding(.top, 16)
             }
-            
             .background(Color("bac"))
             .navigationTitle("Details of the fact")
+            .navigationBarTitleDisplayMode(.inline) // Устанавливаем режим отображения заголовка
+            .toolbar {
+                // Настройка цвета заголовка
+                ToolbarItem(placement: .principal) {
+                    Text("Details of the fact")
+                        .font(.title) // Установка размера шрифта
+                        .foregroundColor(.white) // Установка цвета текста
+                }
+            }
+            .background(Color.black) // Цвет фона навигационной панели
+            .navigationBarColor(.black) // Цвет навигационной панели (функция ниже)
         }
+    }
+}
+
+extension View {
+    func navigationBarColor(_ color: UIColor) -> some View {
+        self
+            .background(
+                NavigationConfigurator { nc in
+                    nc.navigationBar.barTintColor = color
+                    nc.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white] // Цвет заголовка
+                }
+            )
+    }
+}
+
+// Для настройки навигационной панели
+struct NavigationConfigurator: UIViewControllerRepresentable {
+    var configure: (UINavigationController) -> Void
+
+    func makeUIViewController(context: Context) -> UINavigationController {
+        UINavigationController()
+    }
+
+    func updateUIViewController(_ uiViewController: UINavigationController, context: Context) {
+        configure(uiViewController)
     }
 }
 

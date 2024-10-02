@@ -62,9 +62,10 @@ struct QuizView: View {
                         .padding(.leading, 20)
                         
                         Text("Montreal Casino")
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                             .font(.title.bold())
                             .padding(.leading, 20)
+                        
                         
                         Spacer()
                         
@@ -75,18 +76,18 @@ struct QuizView: View {
                     HStack {
                         Spacer()
                         Text("\(timeRemaining)")
-                            .foregroundColor(Color("pin"))
+                            .foregroundColor(.white)
                             .font(.title3)
                             .padding(.trailing,30)
                     }
                     .padding(.top, 20)
                     
                     Text("\(Questions.questions[numberQuestions])")
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .font(.custom("Lalezar", size: 30))
                         .multilineTextAlignment(.center)
                         .padding(30)
-                        .background(Color(.white))
+                        .background(Color("col4"))
                         .cornerRadius(20)
                         .padding(.top, 40)
                         .padding(.horizontal)
@@ -103,7 +104,8 @@ struct QuizView: View {
                     
                     Spacer()
                 }.frame(maxWidth: .infinity,maxHeight: .infinity)
-                    .background(Color("bac")).ignoresSafeArea()
+                    .background(Color("col5")).ignoresSafeArea()
+                   
                 
                 // Full-screen overlays
                 if numberQuestions == Questions.wrong.count - 1 {
@@ -161,7 +163,7 @@ struct QuizView: View {
             }
         }, label: {
             Text("\(Questions.wordAnswer[numberQuestions][index])")
-                .foregroundColor(.black)
+                .foregroundColor(.white)
                 .font(.custom("Lalezar", size: 14))
                 .multilineTextAlignment(.center)
                 .padding(30)
@@ -175,13 +177,14 @@ struct QuizView: View {
     func resultOverlay(imageName: String, action: @escaping () -> Void) -> some View {
         VStack {
             ZStack {
-                Image(imageName)
+                Image(imageName).ignoresSafeArea()
+                    .frame(maxWidth: 300, maxHeight: 300)
                 Button {
                     action()
                 } label: {
                     Image("Frame 11")
                 }
-                .padding(.top, 130)
+                .padding(.top, 270)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -197,7 +200,7 @@ struct QuizView: View {
         } else if three.wrappedValue {
             return Color("baci3")
         } else {
-            return Color(.white)
+            return Color("col4")
         }
     }
     

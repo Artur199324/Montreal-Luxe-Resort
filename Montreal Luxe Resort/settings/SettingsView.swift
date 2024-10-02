@@ -20,7 +20,7 @@ struct SettingsView: View {
                     Button {
                         self.dismiss()
                     } label: {
-                        Image("tabler-icon-arrow-narrow-left 2")
+                        Image("tabler-icon-arrow-narrow-left 1")
                     }
                     .padding(.leading, 20)
                     
@@ -58,7 +58,7 @@ struct SettingsView: View {
             }
                 
         }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
-            .background(Image("settings").ignoresSafeArea())
+            .background(Image("hotels").ignoresSafeArea())
             .fullScreenCover(isPresented: $isContakt, content: {
                 ContactUsView()
             })

@@ -19,7 +19,7 @@ struct InterestingView: View {
                         Button(action: {
                             self.dismiss()
                         }, label: {
-                            Image("tabler-icon-arrow-narrow-left")
+                            Image("tabler-icon-arrow-narrow-left 1")
                         })
                         .padding(.leading, 20)
                         
@@ -54,7 +54,7 @@ struct InterestingView: View {
                     //                .padding(.bottom, 50)
                     
                 }
-                .background(Image("interesting"))
+                .background(Image("hotels"))
                 .ignoresSafeArea()
                 .fullScreenCover(isPresented: $isAddFact, content: {
                     AddFactView()

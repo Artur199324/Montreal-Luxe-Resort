@@ -24,24 +24,24 @@ struct ContactUsView: View {
                         Image("tabler-icon-arrow-narrow-left 1")
                     })
                    
-                    Image("Frame 13").padding(.leading,20)
+                    Image("coonaw").padding(.leading,20)
                     Spacer()
                 }.padding(.leading,30)
                 .padding(.top,30)
                 
                 
                 ZStack{
-                    Image("Frame 16")
+                
                     VStack(alignment: .leading, spacing: 5) {
                                 Group {
                                     // Поле для ввода имени
                                     Text("Your Name")
                                         .font(.headline)
-                                        .foregroundColor(.black)
+                                        .foregroundColor(Color("col6"))
                                     
                                     TextField("Enter Your Name", text: $name)
                                         .padding()
-                                        .background(Color.white)
+                                        .background(Color("col6"))
                                         .cornerRadius(10)
                                         .foregroundColor(.black)
                                         .font(.system(size: 18, weight: .bold))
@@ -49,11 +49,11 @@ struct ContactUsView: View {
                                     // Поле для ввода email
                                     Text("Email")
                                         .font(.headline)
-                                        .foregroundColor(.black)
+                                        .foregroundColor(Color("col6"))
                                     
                                     TextField("Enter Your Email", text: $email)
                                         .padding()
-                                        .background(Color.white)
+                                        .background(Color("col6"))
                                         .cornerRadius(10)
                                         .foregroundColor(.black)
                                         .font(.system(size: 18, weight: .bold))
@@ -62,11 +62,11 @@ struct ContactUsView: View {
                                     // Поле для ввода сообщения
                                     Text("Message")
                                         .font(.headline)
-                                        .foregroundColor(.black)
+                                        .foregroundColor(Color("col6"))
                                     
                                     TextEditor(text: $message)
                                         .padding()
-                                        .background(Color.white)
+                                        .background(Color("col6"))
                                         .cornerRadius(10)
                                         .foregroundColor(.black)
                                         .font(.system(size: 18, weight: .bold))
@@ -85,18 +85,20 @@ struct ContactUsView: View {
                 Button(action: {
                     showMessage.toggle()
                 }, label: {
-                   Image("Frame 14")
+                   Image("sssqa")
                 }).padding(.top,30)
                 Spacer()
                 
             }
            
-        }.overlay(
+        }
+        .overlay(
             VStack {
                 if showMessage {
                     ZStack {
                         Color.black.opacity(0.9).ignoresSafeArea()
-                        Image("Frame 38")
+                        Image("Frame 38").frame(maxWidth: 300, maxHeight: 300)
+                        
                         Button(action: {
                             self.dismiss()
                         }, label: {
@@ -112,7 +114,8 @@ struct ContactUsView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             
             .zIndex(1)
-        ).background(Color("bac")
+        )
+        .background(Color("col5")
             .ignoresSafeArea()
         )
         .frame(maxWidth: .infinity, maxHeight: .infinity)

@@ -50,14 +50,14 @@ struct BookingView: View {
                                     changeMonth(by: -1)
                                 }) {
                                     Image(systemName: "chevron.left")
-                                        .foregroundColor(.purple)
+                                        .foregroundColor(.white)
                                 }
                                 
                                 Spacer()
                                 
                                 Text("\(monthName(month: selectedMonth)) \(selectedYear)")
                                     .font(.headline)
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 
                                 Spacer()
                                 
@@ -66,7 +66,7 @@ struct BookingView: View {
                                     changeMonth(by: 1)
                                 }) {
                                     Image(systemName: "chevron.right")
-                                        .foregroundColor(.purple)
+                                        .foregroundColor(.white)
                                 }
                                 
                                 Spacer()
@@ -75,7 +75,7 @@ struct BookingView: View {
                                     selectedStartDate = nil
                                     selectedEndDate = nil
                                 }
-                                .foregroundColor(.purple)
+                                .foregroundColor(.white)
                             }
                             .padding(.horizontal)
                             
@@ -88,10 +88,12 @@ struct BookingView: View {
                                     .font(.subheadline)
                                     .foregroundColor(.gray)
                                 Spacer()
-                                Stepper(value: $numberOfAdults, in: 1...10) {
-                                    Text("\(numberOfAdults)")
-                                        .font(.subheadline)
-                                }
+//                                Stepper(value: $numberOfAdults, in: 1...10) {
+//                                    Text("\(numberOfAdults)")
+//                                        .font(.subheadline)
+//                                        .foregroundColor(.white)
+//                                }
+                                CustomStepper(value: $numberOfAdults, range: 1...10)
                             }
                             .padding(.horizontal)
                             
@@ -101,31 +103,49 @@ struct BookingView: View {
                                     .font(.subheadline)
                                     .foregroundColor(.gray)
                                 Spacer()
-                                Stepper(value: $numberOfChildren, in: 0...10) {
-                                    Text("\(numberOfChildren)")
-                                        .font(.subheadline)
-                                }
+                                CustomStepper(value: $numberOfChildren, range: 1...10)
+                              
                             }
                             .padding(.horizontal)
                             
-                            TextField("Your Name", text: $name)
-                                .padding()
-                                .background(Color.white.opacity(0.7))
-                                .cornerRadius(10)
-                                .padding(.horizontal, 24)
+                            ZStack(alignment: .leading) {
+                                if name.isEmpty {
+                                    Text("Your Name")
+                                        .foregroundColor(.white)  // Цвет плейсхолдера
+                                        .padding(.horizontal, 30)
+                                }
+                                
+                                TextField("", text: $name)
+                                    .padding()
+                                    .foregroundColor(.white)  // Цвет текста, который вводит пользователь
+                                    .background(Color("col4").opacity(0.7))
+                                    .cornerRadius(10)
+                                    .padding(.horizontal, 24)
+                            }  // Цвет плейсхолдера
+
                             
                             // Поле для ввода номера телефона
-                            TextField("Phone Number", text: $phoneNumber)
-                                .keyboardType(.numberPad) // Используем цифровую клавиатуру
-                                .padding()
-                                .background(Color.white.opacity(0.7))
-                                .cornerRadius(10)
-                                .padding(.horizontal, 24)
-                                .onChange(of: phoneNumber) { oldValue, newValue in
-                                    // Оставляем только цифры в строке
-                                    phoneNumber = newValue.filter { "0123456789".contains($0) }
+                            ZStack(alignment: .leading) {
+                                if phoneNumber.isEmpty {
+                                    Text("Phone Number")
+                                        .foregroundColor(.white)  // Цвет плейсхолдера
+                                        .padding(.horizontal, 30)
                                 }
+                                
+                                TextField("", text: $phoneNumber)
+                                    .keyboardType(.numberPad) // Используем цифровую клавиатуру
+                                    .padding()
+                                    .foregroundColor(.white)  // Цвет текста, который вводит пользователь
+                                    .background(Color("col4").opacity(0.7))
+                                    .cornerRadius(10)
+                                    .padding(.horizontal, 24)
+                                    .onChange(of: phoneNumber) { oldValue, newValue in
+                                        // Оставляем только цифры в строке
+                                        phoneNumber = newValue.filter { "0123456789".contains($0) }
+                                    }
+                            }
 
+                            
                             // Book Now button
                             Button(action: {
                                 bookNow()
@@ -135,9 +155,11 @@ struct BookingView: View {
                             .padding(.horizontal)
                             .padding(.top, 10)
                             Image("You will be called back to the number you provided!").padding(.top,30)
+                            
                         }
                         .padding(.vertical)
-                        .background(Color(UIColor(hex: "##F0EEFF")))
+                        .background(Color(UIColor(hex: "#1A0D70")))
+                        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
                         Spacer()
                     }else{
                         VStack(spacing: 20) {
@@ -146,26 +168,32 @@ struct BookingView: View {
                                 Image("Name").padding(.leading,20)
                                 Spacer()
                                 Text(name).padding(.trailing,20)
+                                    .foregroundColor(.white)
                             }.padding(.top,20)
                             HStack{
                                 Image("Phone").padding(.leading,20)
                                 Spacer()
                                 Text(phoneNumber).padding(.trailing,20)
+                                    .foregroundColor(.white)
                             }.padding(.top,20)
                             HStack{
                                 Image("Dates").padding(.leading,20)
+                                    .foregroundColor(.white)
                                 Spacer()
                                 Text(dat).padding(.trailing,20)
+                                    .foregroundColor(.white)
                             }.padding(.top,20)
                             HStack{
                                 Image("Adults").padding(.leading,20)
                                 Spacer()
                                 Text("\(numberOfAdults)").padding(.trailing,20)
+                                    .foregroundColor(.white)
                             }.padding(.top,20)
                             HStack{
                                 Image("Children").padding(.leading,20)
                                 Spacer()
                                 Text("\(numberOfChildren)").padding(.trailing,20)
+                                    .foregroundColor(.white)
                             }.padding(.top,20)
                             
                             HStack{
@@ -185,7 +213,7 @@ struct BookingView: View {
                             
                             Spacer()
                         } .padding(.vertical)
-                            .background(Color(UIColor(hex: "##F0EEFF")))
+                            .background(Color(UIColor(hex: "#1A0D70")))
                         
                     }
                 }
@@ -342,14 +370,14 @@ struct CalendarView: View {
         if isSelectedDate(date) {
             return Color.blue
         } else if isInRange(date) {
-            return Color.blue.opacity(0.2)
+            return Color("col1")
         } else {
             return Color.clear
         }
     }
     
     private func foregroundColor(for date: Date) -> Color {
-        return isDateInPast(date) ? Color.gray : (isSelectedDate(date) ? Color.white : Color.black)
+        return isDateInPast(date) ? Color.gray : (isSelectedDate(date) ? Color.white : Color.white)
     }
     
     private func isSelectedDate(_ date: Date) -> Bool {

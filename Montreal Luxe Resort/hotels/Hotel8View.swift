@@ -32,19 +32,27 @@ struct Hotel8View: View {
                 .padding(.top, 50)
                 .padding(.leading, 20)
                 
-                Picker("", selection: $selectedSegment) {
+                HStack(spacing: 0) {
                     ForEach(Array(segments.enumerated()), id: \.offset) { index, segment in
                         Text(segment)
-                            .tag(index)
+                            .font(.system(size: 16))  // Уменьшенный размер шрифта
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)  // Уменьшаем вертикальные отступы для уменьшения высоты
+                            .padding(.horizontal, 1)  // Немного уменьшим горизонтальные отступы
+                            .background(selectedSegment == index ? Color("col1") : Color.clear)  // Цвет фона для выбранного элемента
+                            .foregroundColor(selectedSegment == index ? Color.white : Color.white )  // Цвет текста для выбранного элемента
+                            .cornerRadius(10)
+                            .onTapGesture {
+                                selectedSegment = index  // Обновляем выбранный сегмент
+                            }
                     }
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                .background(Color.purple.opacity(0.2)) // Фон для всего Picker
-                .cornerRadius(20) // Скругление углов
+                .padding(.vertical, 5)  // Уменьшение общей высоты переключателя
+                .background(Color("col2"))  // Фон для всего переключателя
+                .cornerRadius(20)  // Скругление углов
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.purple.opacity(0.5), lineWidth: 2) // Рамка вокруг Picker
+                        .stroke(Color.purple.opacity(0.5), lineWidth: 2)  // Рамка вокруг переключателя
                 )
                 .padding(.horizontal, 16)
                 .padding(.top, 300)
@@ -54,9 +62,11 @@ struct Hotel8View: View {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Hotel Le Crystal")
+                                .foregroundColor(.white)
                                 .font(.title)
                                 .padding()
                             Text("Vivez le dynamisme et le raffinement du Warwick Le Crystal – Montréal, un hôtel-boutique situé au cœur du centre-ville, à quelques pas de l’emblématique Centre-Bell.\n\nProfitez d’un excellent séjour dans l’une de ses suites spécialement conçues pour un confort accru dans des espaces baignés d’une lumière naturelle qui leur confèrent une ambiance apaisante.\n\nAlliant style chic et urbain, elles sont toutes équipées d’une cuisinette, d’un très grand lit et d’une douche à effet pluie! Et si vous recherchez une destination pour les réunions d’affaires au centre-ville, l’espace événementiel du Warwick Le Crystal – Montréal comprend neuf salles polyvalentes et lumineuses, dont une vaste salle de bal adaptée aux réceptions de gala et aux cocktails.")
+                                .foregroundColor(Color("col3"))
                                 .padding(.horizontal)
                             Image("Frame 32")
                                 .resizable()

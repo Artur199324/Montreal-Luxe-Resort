@@ -32,19 +32,27 @@ struct Hotel5View: View {
                 .padding(.top, 50)
                 .padding(.leading, 20)
                 
-                Picker("", selection: $selectedSegment) {
+                HStack(spacing: 0) {
                     ForEach(Array(segments.enumerated()), id: \.offset) { index, segment in
                         Text(segment)
-                            .tag(index)
+                            .font(.system(size: 16))  // Уменьшенный размер шрифта
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)  // Уменьшаем вертикальные отступы для уменьшения высоты
+                            .padding(.horizontal, 1)  // Немного уменьшим горизонтальные отступы
+                            .background(selectedSegment == index ? Color("col1") : Color.clear)  // Цвет фона для выбранного элемента
+                            .foregroundColor(selectedSegment == index ? Color.white : Color.white )  // Цвет текста для выбранного элемента
+                            .cornerRadius(10)
+                            .onTapGesture {
+                                selectedSegment = index  // Обновляем выбранный сегмент
+                            }
                     }
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                .background(Color.purple.opacity(0.2)) // Фон для всего Picker
-                .cornerRadius(20) // Скругление углов
+                .padding(.vertical, 5)  // Уменьшение общей высоты переключателя
+                .background(Color("col2"))  // Фон для всего переключателя
+                .cornerRadius(20)  // Скругление углов
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.purple.opacity(0.5), lineWidth: 2) // Рамка вокруг Picker
+                        .stroke(Color.purple.opacity(0.5), lineWidth: 2)  // Рамка вокруг переключателя
                 )
                 .padding(.horizontal, 16)
                 .padding(.top, 300)
@@ -54,9 +62,11 @@ struct Hotel5View: View {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("The Ritz-Carlton, Montreal")
+                                .foregroundColor(.white)
                                 .font(.title)
                                 .padding()
                             Text("Rest easy at The Ritz-Carlton, Montreal. Our hotel in Montreal, Canada is enchanting with strollable neighborhoods filled with boutiques and museums, historic landmarks such as Notre-Dame Basilica of Montreal and annual events including the Rogers Cup, the Osheaga Music and Arts Festival and the International Jazz Festival.\n\nAfter a busy day, unwind at our restaurant which features French cuisine prepared with local products at Maison Boulud, Afternoon Tea served in the beautiful Palm Court where numerous details from 1912 remain, a spa with advanced treatments and an indoor saltwater pool with a skyline view.")
+                                .foregroundColor(Color("col3"))
                                 .padding(.horizontal)
                             Image("Frame 32")
                                 .resizable()

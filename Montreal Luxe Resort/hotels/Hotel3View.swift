@@ -32,19 +32,27 @@ struct Hotel3View: View {
                 .padding(.top, 50)
                 .padding(.leading, 20)
                 
-                Picker("", selection: $selectedSegment) {
+                HStack(spacing: 0) {
                     ForEach(Array(segments.enumerated()), id: \.offset) { index, segment in
                         Text(segment)
-                            .tag(index)
+                            .font(.system(size: 16))  // Уменьшенный размер шрифта
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 10)  // Уменьшаем вертикальные отступы для уменьшения высоты
+                            .padding(.horizontal, 1)  // Немного уменьшим горизонтальные отступы
+                            .background(selectedSegment == index ? Color("col1") : Color.clear)  // Цвет фона для выбранного элемента
+                            .foregroundColor(selectedSegment == index ? Color.white : Color.white )  // Цвет текста для выбранного элемента
+                            .cornerRadius(10)
+                            .onTapGesture {
+                                selectedSegment = index  // Обновляем выбранный сегмент
+                            }
                     }
                 }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding()
-                .background(Color.purple.opacity(0.2)) // Фон для всего Picker
-                .cornerRadius(20) // Скругление углов
+                .padding(.vertical, 5)  // Уменьшение общей высоты переключателя
+                .background(Color("col2"))  // Фон для всего переключателя
+                .cornerRadius(20)  // Скругление углов
                 .overlay(
                     RoundedRectangle(cornerRadius: 20)
-                        .stroke(Color.purple.opacity(0.5), lineWidth: 2) // Рамка вокруг Picker
+                        .stroke(Color.purple.opacity(0.5), lineWidth: 2)  // Рамка вокруг переключателя
                 )
                 .padding(.horizontal, 16)
                 .padding(.top, 300)
@@ -54,10 +62,12 @@ struct Hotel3View: View {
                     ScrollView {
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Sofitel Montreal Golden Mile")
+                                .foregroundColor(.white)
                                 .font(.title)
                                 .padding()
                             Text("Sofitel Montreal Golden Mile is conveniently located in the heart of the city ideal for business travelers and art lovers - at the foot of lush Mount Royal Park, next to the renowned McGill University and Montreal Museum of Fine Arts.\n\nEnjoy the masterful blend of minimalist design and warm sophistication at our luxury hotel embellished with Victorian accents from the estate of North American railroad pioneer William Cornelius Van Horne.\n\nChoose one of 241 elegant and stylish hotel rooms or 17 suites all featuring Sofitel's luxurious feathertop and duvet sleep system - SoBed. 258 rooms including 17 suites.")
                                 .padding(.horizontal)
+                                .foregroundColor(Color("col3"))
                             Image("Frame 32")
                                 .resizable()
                                 .scaledToFit()

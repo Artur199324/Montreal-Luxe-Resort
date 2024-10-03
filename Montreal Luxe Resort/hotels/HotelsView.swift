@@ -25,7 +25,7 @@ struct HotelsView: View {
                     Button(action: {
                         self.dismiss()
                     }, label: {
-                        Image("tabler-icon-arrow-narrow-left")
+                        Image("tabler-icon-arrow-narrow-left 1")
                     })
                     .padding(.leading, 20)
                     

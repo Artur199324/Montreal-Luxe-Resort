@@ -48,7 +48,7 @@ struct WelcomeView: View {
                 HotelsView()
             })
             .fullScreenCover(isPresented: $isQuiz, content: {
-                QuizView()
+                CalculateView()
             })
             .fullScreenCover(isPresented: $isSettings, content: {
                 SettingsView()

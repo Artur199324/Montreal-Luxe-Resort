@@ -158,7 +158,7 @@ struct BookingView: View {
                             
                         }
                         .padding(.vertical)
-                        .background(Color(UIColor(hex: "#1A0D70")))
+                        .background(Color(UIColor(hex: "#70300D")))
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/,maxHeight: .infinity)
                         Spacer()
                     }else{
@@ -213,7 +213,7 @@ struct BookingView: View {
                             
                             Spacer()
                         } .padding(.vertical)
-                            .background(Color(UIColor(hex: "#1A0D70")))
+                            .background(Color(UIColor(hex: "#70300D")))
                         
                     }
                 }

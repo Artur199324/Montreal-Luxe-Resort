@@ -43,7 +43,7 @@ struct FactDetailView: View {
                 }
                 .padding(.top, 16)
             }
-            .background(Color("bac"))
+            .background(Color("col6"))
             .navigationTitle("Details of the fact")
             .navigationBarTitleDisplayMode(.inline) // Устанавливаем режим отображения заголовка
             .toolbar {

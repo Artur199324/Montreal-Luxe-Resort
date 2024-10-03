@@ -36,8 +36,6 @@
 		754F62032C91D58F00A3488E /* Hotel8View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62022C91D58F00A3488E /* Hotel8View.swift */; };
 		754F62052C91F45900A3488E /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62042C91F45900A3488E /* Comment.swift */; };
 		754F62072C91F47A00A3488E /* CommentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62062C91F47A00A3488E /* CommentsManager.swift */; };
-		754F620A2C92134C00A3488E /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F62092C92134C00A3488E /* Questions.swift */; };
-		754F620C2C92274F00A3488E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754F620B2C92274F00A3488E /* QuizView.swift */; };
 		756EF4D12C9A08130026EB10 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF4D02C9A08130026EB10 /* SettingsView.swift */; };
 		756EF4D32C9A0BBC0026EB10 /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF4D22C9A0BBC0026EB10 /* ContactUsView.swift */; };
 		756EF4D52C9A10990026EB10 /* TermsofUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EF4D42C9A10990026EB10 /* TermsofUseView.swift */; };
@@ -50,6 +48,7 @@
 		75DD9B392CAD42D100E3A995 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 75DD9B382CAD42D100E3A995 /* FirebaseFirestore */; };
 		75DD9B3F2CAD9DD700E3A995 /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD9B3E2CAD9DD700E3A995 /* CustomStepper.swift */; };
 		75DD9B412CAE7BE300E3A995 /* RotatingProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD9B402CAE7BE200E3A995 /* RotatingProgressBar.swift */; };
+		75DD9B8C2CB5543100E3A995 /* CalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DD9B8B2CB5543100E3A995 /* CalculateView.swift */; };
 		9385E3431CB4F12347A94E8C /* Pods_Montreal_Luxe_Resort.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03244FF1C892522D9E1E0CE /* Pods_Montreal_Luxe_Resort.framework */; };
 		AA0C6ABF65874E393AE9E8DB /* Pods_Montreal_Luxe_ResortTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE5DD7F71FFA08AAEF1FB67 /* Pods_Montreal_Luxe_ResortTests.framework */; };
 /* End PBXBuildFile section */
@@ -107,8 +106,6 @@
 		754F62022C91D58F00A3488E /* Hotel8View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel8View.swift; sourceTree = "<group>"; };
 		754F62042C91F45900A3488E /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		754F62062C91F47A00A3488E /* CommentsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsManager.swift; sourceTree = "<group>"; };
-		754F62092C92134C00A3488E /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
-		754F620B2C92274F00A3488E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		756EF4D02C9A08130026EB10 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		756EF4D22C9A0BBC0026EB10 /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
 		756EF4D42C9A10990026EB10 /* TermsofUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsofUseView.swift; sourceTree = "<group>"; };
@@ -120,6 +117,7 @@
 		75DD9B352CAD411B00E3A995 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75DD9B3E2CAD9DD700E3A995 /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStepper.swift; sourceTree = "<group>"; };
 		75DD9B402CAE7BE200E3A995 /* RotatingProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingProgressBar.swift; sourceTree = "<group>"; };
+		75DD9B8B2CB5543100E3A995 /* CalculateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateView.swift; sourceTree = "<group>"; };
 		7E6DA1BACB9A9859732F57EF /* Pods-Montreal Luxe Resort.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe Resort.debug.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe Resort/Pods-Montreal Luxe Resort.debug.xcconfig"; sourceTree = "<group>"; };
 		B75204336EEA18ABC3315D34 /* Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig"; path = "Target Support Files/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests/Pods-Montreal Luxe Resort-Montreal Luxe ResortUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D03244FF1C892522D9E1E0CE /* Pods_Montreal_Luxe_Resort.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Montreal_Luxe_Resort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,10 +181,10 @@
 		754F61B02C91A57E00A3488E /* Montreal Luxe Resort */ = {
 			isa = PBXGroup;
 			children = (
+				75DD9B8A2CB5538900E3A995 /* сalculate */,
 				756EF4CD2C9A07CF0026EB10 /* settings */,
 				754F61E02C91A6E400A3488E /* Fact+CoreDataClass.swift */,
 				754F61E12C91A6E400A3488E /* Fact+CoreDataProperties.swift */,
-				754F62082C9212FE00A3488E /* quiz */,
 				754F61F12C91CA8E00A3488E /* hotels */,
 				754F61E62C91A81E00A3488E /* interesting */,
 				754F61B12C91A57E00A3488E /* Montreal_Luxe_ResortApp.swift */,
@@ -259,15 +257,6 @@
 			path = hotels;
 			sourceTree = "<group>";
 		};
-		754F62082C9212FE00A3488E /* quiz */ = {
-			isa = PBXGroup;
-			children = (
-				754F62092C92134C00A3488E /* Questions.swift */,
-				754F620B2C92274F00A3488E /* QuizView.swift */,
-			);
-			path = quiz;
-			sourceTree = "<group>";
-		};
 		756EF4CD2C9A07CF0026EB10 /* settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,6 +267,14 @@
 				756EF4D82C9A11B80026EB10 /* PrivacyPolicyView.swift */,
 			);
 			path = settings;
+			sourceTree = "<group>";
+		};
+		75DD9B8A2CB5538900E3A995 /* сalculate */ = {
+			isa = PBXGroup;
+			children = (
+				75DD9B8B2CB5543100E3A995 /* CalculateView.swift */,
+			);
+			path = "сalculate";
 			sourceTree = "<group>";
 		};
 		A8492637268481DFA69DA2A5 /* Pods */ = {
@@ -515,7 +512,6 @@
 			files = (
 				754F61BB2C91A57F00A3488E /* Persistence.swift in Sources */,
 				754F61FD2C91D56300A3488E /* Hotel5View.swift in Sources */,
-				754F620C2C92274F00A3488E /* QuizView.swift in Sources */,
 				756EF4D92C9A11B80026EB10 /* PrivacyPolicyView.swift in Sources */,
 				754F62072C91F47A00A3488E /* CommentsManager.swift in Sources */,
 				754F61B42C91A57E00A3488E /* ContentView.swift in Sources */,
@@ -539,10 +535,10 @@
 				756EF4D52C9A10990026EB10 /* TermsofUseView.swift in Sources */,
 				754F61EE2C91BD0200A3488E /* ImagePicker.swift in Sources */,
 				756EF4D32C9A0BBC0026EB10 /* ContactUsView.swift in Sources */,
+				75DD9B8C2CB5543100E3A995 /* CalculateView.swift in Sources */,
 				754F61FF2C91D56E00A3488E /* Hotel6View.swift in Sources */,
 				754F61E52C91A79700A3488E /* WelcomeView.swift in Sources */,
 				7590F6D52CA408E400B7CC92 /* EULAScreen.swift in Sources */,
-				754F620A2C92134C00A3488E /* Questions.swift in Sources */,
 				75DD9B412CAE7BE300E3A995 /* RotatingProgressBar.swift in Sources */,
 				754F61EA2C91AB0C00A3488E /* FactDetailView.swift in Sources */,
 				754F61E82C91A83B00A3488E /* InterestingView.swift in Sources */,
@@ -709,7 +705,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Montreal Luxe Resort/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -723,7 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0;
+				MARKETING_VERSION = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -743,7 +739,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Montreal Luxe Resort/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
@@ -757,7 +753,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 5.0;
+				MARKETING_VERSION = 6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.luxusmontral;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

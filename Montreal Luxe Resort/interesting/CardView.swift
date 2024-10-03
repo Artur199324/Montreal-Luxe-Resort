@@ -43,7 +43,7 @@ struct CardView: View {
             }
             .padding([.leading, .bottom, .trailing], 10)
         }
-        .background(Color("bac"))
+        .background(Color("col2 1"))
         .cornerRadius(15)
         .shadow(color: .black.opacity(0.1), radius: 5, x: 0, y: 5)
     }

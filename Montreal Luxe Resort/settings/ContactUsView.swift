@@ -37,11 +37,11 @@ struct ContactUsView: View {
                                     // Поле для ввода имени
                                     Text("Your Name")
                                         .font(.headline)
-                                        .foregroundColor(Color("col6"))
+                                        .foregroundColor(Color("col7"))
                                     
                                     TextField("Enter Your Name", text: $name)
                                         .padding()
-                                        .background(Color("col6"))
+                                        .background(Color("col7"))
                                         .cornerRadius(10)
                                         .foregroundColor(.black)
                                         .font(.system(size: 18, weight: .bold))
@@ -49,11 +49,11 @@ struct ContactUsView: View {
                                     // Поле для ввода email
                                     Text("Email")
                                         .font(.headline)
-                                        .foregroundColor(Color("col6"))
+                                        .foregroundColor(Color("col7"))
                                     
                                     TextField("Enter Your Email", text: $email)
                                         .padding()
-                                        .background(Color("col6"))
+                                        .background(Color("col7"))
                                         .cornerRadius(10)
                                         .foregroundColor(.black)
                                         .font(.system(size: 18, weight: .bold))
@@ -62,11 +62,11 @@ struct ContactUsView: View {
                                     // Поле для ввода сообщения
                                     Text("Message")
                                         .font(.headline)
-                                        .foregroundColor(Color("col6"))
+                                        .foregroundColor(Color("col7"))
                                     
                                     TextEditor(text: $message)
                                         .padding()
-                                        .background(Color("col6"))
+                                        .background(Color("col7"))
                                         .cornerRadius(10)
                                         .foregroundColor(.black)
                                         .font(.system(size: 18, weight: .bold))
@@ -115,7 +115,7 @@ struct ContactUsView: View {
             
             .zIndex(1)
         )
-        .background(Color("col5")
+        .background(Color("col6")
             .ignoresSafeArea()
         )
         .frame(maxWidth: .infinity, maxHeight: .infinity)

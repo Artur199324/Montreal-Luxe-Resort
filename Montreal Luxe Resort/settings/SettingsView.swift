@@ -42,17 +42,17 @@ struct SettingsView: View {
                 Button(action: {
                     requestAppReview()
                 }, label: {
-                   Image("set2")
+                   Image("set3")
                 })
                 Button(action: {
                     self.isTerms.toggle()
                 }, label: {
-                   Image("set3")
+                   Image("set4")
                 })
                 Button(action: {
                     self.isPolisi.toggle()
                 }, label: {
-                    Image("set4")
+                    Image("set5")
                 })
                 Spacer()
             }

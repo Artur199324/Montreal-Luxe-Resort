@@ -1,7 +1,7 @@
 workflows:
   ios-native-workflow:
-    name: iOS Native
-    max_build_duration: 120
+    name: iOS Native Workflow
+    max_build_duration: 180
     instance_type: mac_mini_m1
     integrations:
       app_store_connect: IOS13
@@ -19,22 +19,33 @@ workflows:
     scripts:
       - name: Install CocoaPods dependencies
         script: |
-          pod install || echo "No Podfile found, skipping pod install."
+          if [ -f "Podfile" ]; then
+            pod install
+          else
+            echo "No Podfile found, skipping pod install."
+          fi
       - name: Set up provisioning profiles settings on Xcode project
-        script: xcode-project use-profiles
+        script: |
+          xcode-project use-profiles
       - name: Increment build number
         script: |
           cd $CM_BUILD_DIR
-          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID")
+          LATEST_BUILD_NUMBER=$(app-store-connect get-latest-app-store-build-number "$APP_STORE_APPLE_ID" || echo "0")
           agvtool new-version -all $(($LATEST_BUILD_NUMBER + 1))
       - name: Obfuscate Swift code
         script: |
-          find . -name "*.swift" -print0 | xargs -0 sed -i '' -e 's/\b(\w+)\b/$1_obf/g'
+          # Use SwiftShield for obfuscation
+          if [ -f "swiftshield.config" ]; then
+            swiftshield -config swiftshield.config
+          else
+            echo "No SwiftShield config file found. Skipping obfuscation."
+          fi
       - name: Build ipa for distribution
         script: |
           xcode-project build-ipa \
             --workspace "$CM_BUILD_DIR/$XCODE_WORKSPACE" \
-            --scheme "$XCODE_SCHEME"
+            --scheme "$XCODE_SCHEME" \
+            --configuration Release
     artifacts:
       - build/ios/ipa/*.ipa
       - /tmp/xcodebuild_logs/*.log
